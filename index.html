@@ -1,0 +1,127 @@
+<html lang="zh-TW">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>Quilldren Diary</title>
+	
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="javascript.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+	
+	<div id="loading">
+		<div id="loading_text" style="font-family:ShadowsIntoLightTwo;">Loading</div>
+		<div id="running_quilldren"></div>
+	</div>
+	<div id="ink"></div>
+	<div id="twitter" class="icon">		
+		<div id="twitter2">
+		</div>
+	</div>
+	<div id="pen" class="icon">
+		<div id="pen2">
+		</div>
+	</div>
+	<div id="earringsL" class="icon"></div>
+	<div id="book" class="icon">
+		<div id="book2" onclick="changeScene()">
+
+		</div>
+	</div>
+	<div id="earringsR" class="icon"></div>
+	<div id="pad" class="icon">
+		<div id="pad2"></div>
+	</div>
+	<div id="quilldren"></div>
+	<div id="cup"></div>
+	<div id="toast"></div>
+		
+</body>
+</html>
+<script>
+
+	function onReady(callback) {
+	  var intervalId = window.setInterval(function() {
+		if (document.getElementsByTagName('body')[0] !== undefined) {
+		  window.clearInterval(intervalId);
+		  callback.call(this);
+		}
+	  }, 1000);
+	}
+
+	var images = [];
+	function preload() {
+		for (var i = 0; i < arguments.length; i++) {
+			images[i] = new Image();
+			images[i].src = preload.arguments[i];
+		}
+	}
+
+	preload(
+		"img/backCover.gif",
+		"img/Book.png",
+		"img/Cover.png",
+		"img/Cup.gif",
+		"img/earringsL.png",
+		"img/earringsR.png",
+		"img/Ink.png",
+		"img/Pad.png",
+		"img/Pen.png",
+		"img/Quildren-1.gif",
+		"img/Quildren-2.gif",
+		"img/Quildren-page.png",
+		"img/Quildren-phone.png",
+		"img/Table.png",
+		"img/Toast.png",
+		"img/Twitter.png"
+	)
+
+	function changeScene(){
+		if ($(window).width() > 480) {
+			changeScenePC();
+		}else{
+			changeSceneMobile();
+		}
+	}
+	$(document).ready(function(){
+		setOffset();
+	});
+	$(document).ready(function(){
+		$(window).resize(function() {
+			setOffset();
+		});
+	});
+	function setOffset(){
+		if ($(window).width()>=1080){
+			$(":root").css("--offsetX", "calc((100vw - ( (16 / 9) * 100vh)) / 2)");
+			$(":root").css("--offsetY", "0");
+			$(":root").css("--unit", "(16 / 9) * 1vh");
+		}else if($(window).width()>=480 && $(window).width()<1080){
+			$(":root").css("--offsetY", "calc((100vh - ( (9 / 16) * 100vw)) / 2)");
+			$(":root").css("--offsetX", "0");
+			$(":root").css("--unit", "1vw");
+		}else{
+			$(":root").css("--offsetY", "calc((100vh - ( (844 / 390) * 100vw)) / 2)");
+			$(":root").css("--offsetX", "0");
+			$(":root").css("--unit", "1vw");
+		}
+	}
+	
+	onReady(function() {	
+		$('#loading').css("transition", "0.5s"); 
+		$('#loading').css("opacity", "0"); 
+		$('#running_quilldren').css("transition", "0.5s"); 
+		$('#running_quilldren').css("opacity", "0"); 
+		$('body').css("transition", "0.5s"); 
+
+		
+		setTimeout(
+			function() {
+				$('#loading').remove();
+				$('#running_quilldren').remove();
+		}, 500);
+	});
+	
+</script>
