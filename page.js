@@ -27,9 +27,15 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
                 <div id="name1_L_type1" class="grid_name_type1">'+name1+'</div>\
                 <div id="name2_L_type1" class="grid_name_type1">'+name2+'</div>\
                 <div id="name3_L_type1" class="grid_name_type1">'+name3+'</div>\
-                <div id="text1_L_type1" class="grid_block_type1">'+text1+'</div>\
-                <div id="text2_L_type1" class="grid_block_type1">'+text2+'</div>\
-                <div id="text3_L_type1" class="grid_block_type1">'+text3+'</div>\
+                <div id="text1_L_type1" class="grid_block_type1">\
+					<div id="Text1" class="grid_text_short_type1">'+text1+'</div>\
+				</div>\
+                <div id="text2_L_type1" class="grid_block_type1">\
+					<div class="grid_text_long_type1">'+text2+'</div>\
+				</div>\
+                <div id="text3_L_type1" class="grid_block_type1">\
+					<div class="grid_text_short_type1">'+text3+'</div>\
+				</div>\
                 <img id="stc1_L_type1" src="'+stc1+'" class="grid_stc_pic_type1"></img>\
                 <img id="stc2_L_type1" src="'+stc2+'" class="grid_stc_pic_type1"></img>\
             </div>\
@@ -54,9 +60,15 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
                 <div id="name1_R_type1" class="grid_name_type1">'+name1+'</div>\
                 <div id="name2_R_type1" class="grid_name_type1">'+name2+'</div>\
                 <div id="name3_R_type1" class="grid_name_type1">'+name3+'</div>\
-                <div id="text1_R_type1" class="grid_block_type1">'+text1+'</div>\
-                <div id="text2_R_type1" class="grid_block_type1">'+text2+'</div>\
-                <div id="text3_R_type1" class="grid_block_type1">'+text3+'</div>\
+                <div id="text1_R_type1" class="grid_block_type1">\
+					<div class="grid_text_long_type1">'+text1+'</div>\
+				</div>\
+                <div id="text2_R_type1" class="grid_block_type1">\
+					<div class="grid_text_short_type1">'+text2+'</div>\
+				</div>\
+                <div id="text3_R_type1" class="grid_block_type1">\
+					<div class="grid_text_short_type1">'+text3+'</div>\
+				</div>\
                 <img id="stc1_R_type1" src="'+stc1+'" class="grid_stc_pic_type1"></img>\
                 <img id="stc2_R_type1" src="'+stc2+'" class="grid_stc_pic_type1"></img>\
             </div>\

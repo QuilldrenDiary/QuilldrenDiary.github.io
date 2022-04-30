@@ -55,6 +55,32 @@
 	max-width:100%;
 }
 
+.grid_text_short_type1{
+	font-size: 1vw;
+	font-family: Georgia;
+	text-align:left;
+	word-wrap: break-word;
+	margin:5px;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	white-space: normal;
+	overflow:hidden;
+}
+
+.grid_text_long_type1{
+	font-size: 1vw;
+	font-family: Georgia;
+	text-align:left;
+	word-wrap: break-word;
+	margin:5px;
+	display: -webkit-box;
+	-webkit-line-clamp: 11;
+	-webkit-box-orient: vertical;
+	white-space: normal;
+	overflow:hidden;
+}
+
 #book_L_type1{
 	grid-column-start: 2;
 	grid-column-end: 4;
