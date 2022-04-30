@@ -6,85 +6,72 @@
 	
 	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="javascript.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="js_PC.js"></script>
+	<script src="js_Phone.js"></script>
+	<script src="page.js"></script>
+	<link rel="stylesheet" type="text/css" href="css_PC.css">
+	<link rel="stylesheet" type="text/css" href="css_Phone.css">
+	<link rel="stylesheet" type="text/css" href="page.css">
 
 <body>
-	
+	<!--Loading頁面-->
 	<div id="loading">
-		<div id="loading_text" style="font-family:ShadowsIntoLightTwo;">Loading</div>
+		<div id="loading_text">Loading</div>
 		<div id="running_quilldren"></div>
 	</div>
-	<div id="ink"></div>
-	<div id="twitter" class="icon">		
-		<div id="twitter2">
-		</div>
-	</div>
-	<div id="pen" class="icon">
-		<div id="pen2">
-		</div>
-	</div>
-	<div id="earringsL" class="icon"></div>
-	<div id="book" class="icon">
-		<div id="book2" onclick="changeScene()">
 
+	<!--桌面-->
+	<div id="ink"></div>
+	<a href="https://twitter.com/quilldren_tw" target="_blank">
+		<div id="twitter" class="icon">		
+			<div id="twitter2"></div>
+		</div>
+	</a>
+	<a href="https://www.plurk.com/quilldren_diary" target="_blank">
+		<div id="pen" class="icon">
+			<div id="pen2"></div>
+		</div>
+	</a>
+	<div id="earringsL" class="icon" onclick="previous()"></div>
+	<!--書開頭-->
+	<div id="book" class="icon">
+		<div id="book2">
+		
 		</div>
 	</div>
-	<div id="earringsR" class="icon"></div>
+	<!--書結尾-->
+	<div id="earringsR" class="icon" onclick="next()"></div>
 	<div id="pad" class="icon">
 		<div id="pad2"></div>
 	</div>
 	<div id="quilldren"></div>
 	<div id="cup"></div>
 	<div id="toast"></div>
-		
 </body>
 </html>
 <script>
+	var j;
+	$('#book').click(changeScene);
 
-	function onReady(callback) {
-	  var intervalId = window.setInterval(function() {
-		if (document.getElementsByTagName('body')[0] !== undefined) {
-		  window.clearInterval(intervalId);
-		  callback.call(this);
-		}
-	  }, 1000);
+	/* 生成書頁 */
+	if ($(window).width() > 480) {
+		create_page(3);
+		insert_page_type1L(1,'pic1.png','pic2.png','pic3.png','name1','name2','name3','text1','text2','text3','stc1','stc2');
+		insert_page_type1R(2,'pic1.png','pic2.png','pic3.png','name1','name2','name3','text1','text2','text3','stc1','stc2');
+		insert_page_type2L(3,'pic1.png','pic2.png','pic3.png','pic4.png','pic5.png','test1','test2','test3','test4','test5');
+		insert_page_type2R(4,'pic1.png','pic2.png','pic3.png','pic4.png','pic5.png','test1','test2','test3','test4','test5');
+	}else{
+		create_page(5);
+		insert_page_type1L(2,'pic1.png','pic2.png','pic3.png','pic4.png','pic5.png','test1','test2','test3','test4','test5');
+		insert_page_type1R(4,'pic1.png','pic2.png','pic3.png','pic4.png','pic5.png','test1','test2','test3','test4','test5');
+		insert_page_type2L(6,'pic1.png','pic2.png','pic3.png','pic4.png','pic5.png','test1','test2','test3','test4','test5');
+		insert_page_type2R(8,'pic1.png','pic2.png','pic3.png','pic4.png','pic5.png','test1','test2','test3','test4','test5');
 	}
+	
 
-	var images = [];
-	function preload() {
-		for (var i = 0; i < arguments.length; i++) {
-			images[i] = new Image();
-			images[i].src = preload.arguments[i];
-		}
-	}
-
-	preload(
-		"img/backCover.gif",
-		"img/Book.png",
-		"img/Cover.png",
-		"img/Cup.gif",
-		"img/earringsL.png",
-		"img/earringsR.png",
-		"img/Ink.png",
-		"img/Pad.png",
-		"img/Pen.png",
-		"img/Quildren-1.gif",
-		"img/Quildren-2.gif",
-		"img/Quildren-page.png",
-		"img/Quildren-phone.png",
-		"img/Table.png",
-		"img/Toast.png",
-		"img/Twitter.png"
-	)
-
-	function changeScene(){
-		if ($(window).width() > 480) {
-			changeScenePC();
-		}else{
-			changeSceneMobile();
-		}
-	}
+	var i = 0;/*計算頁數*/
+	
+	/*RWD設定offset*/
 	$(document).ready(function(){
 		setOffset();
 	});
@@ -93,23 +80,9 @@
 			setOffset();
 		});
 	});
-	function setOffset(){
-		if ($(window).width()>=1080){
-			$(":root").css("--offsetX", "calc((100vw - ( (16 / 9) * 100vh)) / 2)");
-			$(":root").css("--offsetY", "0");
-			$(":root").css("--unit", "(16 / 9) * 1vh");
-		}else if($(window).width()>=480 && $(window).width()<1080){
-			$(":root").css("--offsetY", "calc((100vh - ( (9 / 16) * 100vw)) / 2)");
-			$(":root").css("--offsetX", "0");
-			$(":root").css("--unit", "1vw");
-		}else{
-			$(":root").css("--offsetY", "calc((100vh - ( (844 / 390) * 100vw)) / 2)");
-			$(":root").css("--offsetX", "0");
-			$(":root").css("--unit", "1vw");
-		}
-	}
-	
-	onReady(function() {	
+
+	/*預先載入頁面*/
+	window.onload = function() {	
 		$('#loading').css("transition", "0.5s"); 
 		$('#loading').css("opacity", "0"); 
 		$('#running_quilldren').css("transition", "0.5s"); 
@@ -122,6 +95,59 @@
 				$('#loading').remove();
 				$('#running_quilldren').remove();
 		}, 500);
-	});
+	};
 	
+	/*預先載入後面會用到的圖片*/
+	var preloaded = 0;
+	var images = new Array(
+		"img/Pad-phone.png",
+		"img/Pen-phone.png",
+		"img/Twitter-phone.png",
+		"img/Quildren-page.png",
+		"img/Quildren-phone.png");
+	function preLoader(e) {
+		for (var i = 0; i < images.length; i++) {
+			var tempImage = new Image();
+			
+			tempImage.addEventListener("load", progress, true);
+			tempImage.src = images[i];
+		}
+	}
+	function progress() {
+		preloaded++;
+		
+		if (preloaded == images.length) {
+			/*預留，看之後要不要弄讀取條*/
+		}
+	}
+	this.addEventListener("DOMContentLoaded", preLoader, true);
+
+
+	/*從桌面切換到看書的畫面*/
+	function changeScene(){
+		if(i==0){		
+			if ($(window).width() > 480) {
+				change_scene_PC();
+			}else{
+				change_scene_phone();
+			}
+		}
+	}
+
+	/*上一頁*/
+	function previous(){
+		if ($(window).width() > 480) {
+			previous_PC();
+		}else{
+			previous_phone();
+		}
+	}
+	/*下一頁*/
+	function next(){
+		if ($(window).width() > 480) {
+			next_PC();
+		}else{
+			next_phone();
+		}
+	}
 </script>

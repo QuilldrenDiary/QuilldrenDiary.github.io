@@ -1,0 +1,163 @@
+@media (max-width: 480px){
+	#twitter{
+		transform: translate(calc(-12 * var(--unit)),calc(165 * var(--unit)));
+		position: absolute;
+		top: var(--offsetY); left: var(--offsetX);
+		z-index:1;
+	}
+	#twitter2{
+		width:calc(52 * var(--unit));  
+		height:calc(44.3 * var(--unit));  
+		background-image:url("img/Twitter.png");
+		background-size: cover;
+		transform: rotate(-13deg);
+	}
+	#pen{
+		transform: translate(calc(29 * var(--unit)),calc(155 * var(--unit)));
+		position: absolute;
+		top: var(--offsetY); left: var(--offsetX);
+		z-index:2;
+	}
+	#pen2{
+		width:calc(14.6 * var(--unit));
+		height:calc(82.2 * var(--unit));
+		background-image:url("img/Pen.png");
+		background-size: cover;
+		transform: rotate(26deg);
+		}
+		
+	
+	#cup{
+		width:calc(70 * var(--unit));
+		height:calc(70 * var(--unit));
+		background-image:url("img/Cup.gif");
+		background-size: cover;
+		transform: translate(calc(60 * var(--unit)),calc(155 * var(--unit)));
+		position: absolute;
+		top: var(--offsetY); left: var(--offsetX);
+	}
+	#book{
+		transform: translate(calc(0 * var(--unit)),calc(35 * var(--unit)));
+		position: absolute;
+		top: var(--offsetY); left: var(--offsetX);
+		z-index:5;
+	}
+	#book2{
+		width:calc(95.5 * var(--unit)); 
+		height:calc(117.25 * var(--unit));
+		background-image:url("img/Backstrip.png");
+		background-size: cover;
+		transform: rotate(-4.81deg);
+	}
+
+
+	#earringsL{
+		width:calc(16 * var(--unit)); 
+		height:calc(16 * var(--unit));
+		background-image:url("img/earringsL.png");
+		background-size: cover;
+		position: absolute;
+		top: var(--offsetY); left: var(--offsetX);
+		transform: translate(calc(5 * var(--unit)),calc(165 * var(--unit)));
+		opacity:0;
+		z-index:1;
+		
+	}
+	#earringsR{
+		width:calc(16 * var(--unit)); 
+		height:calc(16 * var(--unit));
+		background-image:url("img/earringsR.png");
+		background-size: cover;
+		position: absolute;
+		top: var(--offsetY); left: var(--offsetX);
+		transform: translate(calc(79 * var(--unit)),calc(165 * var(--unit)));
+		opacity:0;
+		z-index:1;
+	}
+	
+	#pad{
+		transform: translate(calc(29 * var(--unit)),calc(-1 * var(--unit)));
+		position: absolute;
+		top: var(--offsetY); left: var(--offsetX);
+		z-index:6;
+	}
+	#pad2{
+		width:calc(72 * var(--unit));
+		height:calc(57.08 * var(--unit));
+		background-image:url("img/Pad.png");
+		background-size: cover;
+		transform: rotate(11deg);
+	}
+	#quilldren{
+		width:calc(65 * var(--unit));
+		height:calc(65 * var(--unit));
+		background-image:url("img/Quildren-2.gif");
+		background-size: cover;
+		transform: translate(calc(55 * var(--unit)),calc(100 * var(--unit)));
+		position: absolute;
+		top: var(--offsetY); left: var(--offsetX);
+		z-index:5;
+	}
+	#ink {
+		width:calc(50 * var(--unit));
+		height:calc(50 * var(--unit));
+		background-image:url("img/Ink.png");
+		background-size: cover;
+		transform: translate(calc(-20 * var(--unit)),calc(-14 * var(--unit)));
+		position: absolute;
+		top: var(--offsetY); left: var(--offsetX);
+		z-index:7;
+	}
+	#toast{
+		width:calc(65 * var(--unit));
+		height:calc(65 * var(--unit));
+		background-image:url("img/Toast.png");
+		background-size: cover;
+		transform: translate(calc(17 * var(--unit)),calc(170 * var(--unit)));
+		position: absolute;
+		top: var(--offsetY); left: var(--offsetX);
+		opacity: 0;
+
+	}
+	.flip-card {
+		position: absolute;
+		padding-top: calc(3.1 * var(--unit));
+		padding-left: calc(11.6 * var(--unit));
+		background-color: transparent;
+		width: calc(78.75 * var(--unit));
+		height: calc(105 * var(--unit));
+		z-index: 1;
+		perspective: calc(200 * var(--unit));
+	}
+
+	.flip-card-inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.5s;
+		transform-style: preserve-3d;
+		transform-origin: top left;
+	}
+
+	.flip-card-front, .flip-card-back {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden; /* Safari */
+		backface-visibility: hidden;
+	}
+
+	.flip-card-front {
+		/*background-image: url("img/page-even.png");
+		background-size: cover;*/
+		background-color: blanchedalmond;
+	}
+
+	.flip-card-back {
+		/*background-image: url("img/page-odd.png");
+		background-size: cover;*/
+		background-color: blanchedalmond;
+		transform: rotateY(180deg);
+	}
+}
