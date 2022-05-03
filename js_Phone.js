@@ -174,6 +174,7 @@ function first_page_phone(){
 	$(".flip-card-inner").eq(0).css("transform","rotateY(-180deg)");
 	$('#quilldren').addClass("icon"); 
 	$('#quilldren').click(initialize_phone);
+	$(".flip-card").eq(1).css("z-index","4");
 	
 	setTimeout(
 		function() {
