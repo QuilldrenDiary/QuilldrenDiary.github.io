@@ -19,7 +19,7 @@ function setOffset(){
 /* 電腦 */
 /* 　　 */
 
-function change_scene_PC(){
+function initialize_PC(){
 	
 	$(".flip-card-inner").css("transform","rotateY(0deg)");
 	$('#earringsL').css("transition", "0.5s"); 
@@ -29,6 +29,65 @@ function change_scene_PC(){
 	$(".flip-card").css("z-index","1");
 	$(".flip-card").eq(1).css("z-index","2");
 	$("#cover").css("z-index","5");
+	$('#cup').css("display","block");
+	$('#toast').css("display","block");
+	$('#ink').css("display","block");
+	$('#book-bg').remove();
+	$('#quilldren').unbind("click");
+
+	$('#cup').css("transition", "0.5s"); 
+	$('#cup').css("opacity", "1"); 
+	$('#toast').css("transition", "0.5s"); 
+	$('#toast').css("opacity", "1"); 
+	$('#ink').css("transition", "0.5s"); 
+	$('#ink').css("opacity", "1"); 
+	
+	$('#book').css("transition", "0.5s"); 
+	$('#book').css("transform", "translate(calc(13.7 * var(--unit)),calc(4 * var(--unit)))"); 
+	$('#book').addClass("icon"); 
+	$('#book').css("z-index", "5"); 
+	$('#book2').css("transition", "0.5s"); 
+	$('#book2').css("transform", "rotate(-4.81deg)");
+	$('#book2').css("background-image", "url('img/book.png')");   
+	$('#book').click(change_scene_PC);
+	
+	$('#pen').css("transition", "0.5s"); 
+	$('#pen').css("transform", "translate(calc(0.75 * var(--unit)),calc(14 * var(--unit)))"); 
+	$('#pen2').css("transition", "0.5s"); 
+	$('#pen2').css("transform", "rotate(24.03deg)"); 
+	
+	$('#quilldren').css("transition", "0.5s"); 
+	$('#quilldren').css("background-image", "url('img/Quildren-2.gif')"); 
+	$('#quilldren').removeClass("icon"); 
+	$('#quilldren').css("height", "calc(22 * var(--unit))"); 
+	$('#quilldren').css("transform", "translate(calc(45 * var(--unit)),calc(1 * var(--unit)))"); 
+	$('#book').click(change_scene_PC);
+	
+	$('#twitter').css("transition", "0.5s"); 
+	$('#twitter').css("transform", "translate(calc(0 * var(--unit)),calc(39 * var(--unit)))"); 
+	$('#twitter2').css("transition", "0.5s"); 
+	$('#twitter2').css("transform", "rotate(-13deg)"); 
+	
+	$('#pad').css("transition", "0.5s"); 
+	$('#pad').css("transform", "translate(calc(50 * var(--unit)),calc(24 * var(--unit)))"); 
+	$('#pad2').css("transition", "0.5s"); 
+	$('#pad2').css("transform", "rotate(8deg)");
+
+	setTimeout(
+		function() {
+			$('#pen').css("transition", "0s"); 
+			$('#pen2').css("transition", "0s"); 
+			$('#book').css("transition", "0s"); 
+			$('#book2').css("transition", "0s"); 
+			$('#quilldren').css("transition", "0s"); 
+			$('#twitter').css("transition", "0s"); 
+			$('#twitter2').css("transition", "0s"); 
+			$('#pad').css("transition", "0s"); 
+			$('#pad2').css("transition", "0s");
+	}, 200);
+}
+
+function change_scene_PC(){
 
 	$('#cup').css("transition", "0.5s"); 
 	$('#cup').css("opacity", "0"); 
@@ -37,14 +96,13 @@ function change_scene_PC(){
 	$('#ink').css("transition", "0.5s"); 
 	$('#ink').css("opacity", "0"); 
 	
-	
 	$('#book').css("transition", "0.5s"); 
-	$('#book').css("transform", "translate(calc(33 * var(--unit)),0px) scale(105%)"); 
+	$('#book').css("transform", "translate(calc(29 * var(--unit)),calc(-1.5 * var(--unit))) scale(110%)"); 
 	$('#book').removeClass("icon"); 
 	$('#book').css("z-index", "1"); 
 	$('#book2').css("transition", "0.5s"); 
 	$('#book2').css("transform", "translate(0px,calc(1.5 * var(--unit))) rotate(0)"); 
-	$('#book').append('<div id="book_bg"></div>'); 
+	$('#book').append('<div id="book-bg"></div>'); 
 	
 	$('#pen').css("transition", "0.5s"); 
 	$('#pen').css("transform", "translate(calc(90 * var(--unit)),calc(36 * var(--unit))) scale(60%)"); 
@@ -53,10 +111,8 @@ function change_scene_PC(){
 	
 	$('#quilldren').css("transition", "0.5s"); 
 	$('#quilldren').css("background-image", "url('img/Quildren-page.png')"); 
-	$('#quilldren').addClass("icon"); 
 	$('#quilldren').css("height", "calc(32.26 * var(--unit))"); 
 	$('#quilldren').css("transform", "translate(calc(72 * var(--unit)),calc(36 * var(--unit))) scale(35%)"); 
-	$('#quilldren').click(change_scene_PC);
 	
 	$('#twitter').css("transition", "0.5s"); 
 	$('#twitter').css("transform", "translate(calc(61 * var(--unit)),calc(45 * var(--unit))) scale(53%)"); 
@@ -74,22 +130,22 @@ function change_scene_PC(){
 		function() {
 			$('#pen').css("transition", "0s"); 
 			$('#pen2').css("transition", "0s"); 
-			$('#book').css("transition", "0s"); 
 			$('#book2').css("transition", "0s"); 
 			$('#quilldren').css("transition", "0s"); 
 			$('#twitter').css("transition", "0s"); 
 			$('#twitter2').css("transition", "0s"); 
 			$('#pad').css("transition", "0s"); 
 			$('#pad2').css("transition", "0s"); 
+			$('#book2').css("background-image", "none"); 
+			$('#book-bg').css("opacity", "1"); 
+			$('#book-bg').css("transform", "rotate(0)"); 
 			
-			$('#book2').css("background-color", "transparent"); 
-			$('#book_bg').css("opacity", "1"); 
 
-			$('#cup').remove();
-			$('#toast').remove();
-			$('#ink').remove();
+			$('#cup').css("display","none");
+			$('#toast').css("display","none");
+			$('#ink').css("display","none");
 			$('#book').click(first_page_PC);
-	}, 500);
+	}, 200);
 	
 };
 
@@ -98,10 +154,11 @@ function first_page_PC(){
 	$('#earringsL').css("opacity", "1"); 
 	$('#earringsR').css("opacity", "1"); 
 	
-	$('#book').css("transition", "0.5s"); 
-	$('#book').css("transform", "translate(calc(46.7 * var(--unit)),0px) scale(105%)"); 
+	$('#book').css("transform", "translate(calc(44.6 * var(--unit)),calc(-1.5 * var(--unit))) scale(110%)"); 
 	$(".flip-card-inner").eq(0).css("transform","rotateY(-180deg)");
 	
+	$('#quilldren').addClass("icon"); 
+	$('#quilldren').click(initialize_PC);
 	setTimeout(
 		function() {
 			$('#earringsL').css("transition", "0s"); 
@@ -113,6 +170,10 @@ function first_page_PC(){
 
 function next_PC(){
 	$('#earringsR').attr('onclick', '');
+	if(i ==(($(".flip-card").length-1)/2)){
+		$('#book-bg').css("background-image","url('img/book-bgL.png')")
+	}
+
 	if(i == 0){
 		$(".flip-card-inner").eq(0).css("transform","rotateY(-180deg)");
 		$(".flip-card").eq(1).css("z-index","3");
@@ -121,7 +182,6 @@ function next_PC(){
 		setTimeout(
 			function() {
 				$('#earringsL').css("transition", "0s");
-				$('#book').css("transition", "0s"); 
 				i = i + 1;
 				$('#earringsR').attr('onclick', 'next()');
 		}, 250);
@@ -166,6 +226,11 @@ function next_PC(){
 
 function previous_PC(){
 	$('#earringsL').attr('onclick', '');
+
+	if((i-1) ==(($(".flip-card").length-1)/2)){
+		$('#book-bg').css("background-image","url('img/book-bgR.png')")
+	}
+
 	if(i == $(".flip-card-inner").length){
 		$('#earringsR').css("transition", "0.5s"); 
 		$("#earringsR").css("opacity","1");
