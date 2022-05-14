@@ -35,7 +35,7 @@
 }
 
 .grid_name_type1{
-	font-size: 0.5vw;
+	font-size: 0.4em;
 	font-style: italic;
 	font-family: Verdana;
 	display: flex;
@@ -260,7 +260,7 @@
 }
 
 .grid_name_type2{
-	font-size: 0.5vw;
+	font-size: 0.4em;
 	font-style: italic;
 	font-family: Verdana;
 	display: flex;
