@@ -61,6 +61,7 @@ function initialize_PC(){
 	$('#quilldren').removeClass("icon"); 
 	$('#quilldren').css("height", "calc(22 * var(--unit))"); 
 	$('#quilldren').css("transform", "translate(calc(45 * var(--unit)),calc(1 * var(--unit)))"); 
+	$('#book').unbind("click");
 	$('#book').click(change_scene_PC);
 	
 	$('#twitter').css("transition", "0.5s"); 
@@ -132,6 +133,8 @@ function change_scene_PC(){
 			$('#pen2').css("transition", "0s"); 
 			$('#book2').css("transition", "0s"); 
 			$('#quilldren').css("transition", "0s"); 
+			$('#quilldren').addClass("icon"); 
+			$('#quilldren').click(initialize_PC);
 			$('#twitter').css("transition", "0s"); 
 			$('#twitter2').css("transition", "0s"); 
 			$('#pad').css("transition", "0s"); 
@@ -157,8 +160,6 @@ function first_page_PC(){
 	$('#book').css("transform", "translate(calc(44.6 * var(--unit)),calc(-1.5 * var(--unit))) scale(110%)"); 
 	$(".flip-card-inner").eq(0).css("transform","rotateY(-180deg)");
 	
-	$('#quilldren').addClass("icon"); 
-	$('#quilldren').click(initialize_PC);
 	setTimeout(
 		function() {
 			$('#earringsL').css("transition", "0s"); 

@@ -32,6 +32,7 @@ function initialize_phone(){
 	$('#book2').css("width", "calc(95.5 * var(--unit))"); 
 	$('#book2').css("height", "calc(117.25 * var(--unit))");  
 	$('#book2').css("background-image", "url('img/book.png')");  
+	$('#book').unbind("click");
 	$('#book').click(change_scene_phone);
 
 	$('.flip-card').css("transition", "0.5s"); 
@@ -152,6 +153,8 @@ function change_scene_phone(){
 			$('#book2').css("transition", "0s"); 
 			$('.flip-card').css("transition", "0s"); 
 			$('#quilldren').css("transition", "0s"); 
+			$('#quilldren').addClass("icon"); 
+			$('#quilldren').click(initialize_phone);
 			$('#twitter').css("transition", "0s"); 
 			$('#twitter2').css("transition", "0s"); 
 			$('#pad').css("transition", "0s"); 
@@ -172,8 +175,6 @@ function first_page_phone(){
 	$('#earringsR').css("transition", "0.5s"); 
 	$('#earringsR').css("opacity", "1"); 
 	$(".flip-card-inner").eq(0).css("transform","rotateY(-180deg)");
-	$('#quilldren').addClass("icon"); 
-	$('#quilldren').click(initialize_phone);
 	$(".flip-card").eq(1).css("z-index","4");
 	
 	setTimeout(
