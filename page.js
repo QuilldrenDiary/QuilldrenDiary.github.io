@@ -1,4 +1,9 @@
 function create_page(i){
+    if ($(window).width() > 480) {
+        i=i+1;
+    }else{
+        i=i+2;
+    }
     var j;
     for(j=0;j<i;j++){
         $('#book2').append('<div class="flip-card" ></div>');
@@ -13,6 +18,12 @@ function create_page(i){
 }
 
 function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3,stc1,stc2){
+
+    if ($(window).width() > 480) {
+        i=i+2;
+    }else{
+        i=i*2;
+    }
 
 	var text1_id = text1, text2_id = text2, text3_id = text3;
     requirejs([text1], function(text1) {
@@ -58,6 +69,12 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 }
 function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3,stc1,stc2){
 
+    if ($(window).width() > 480) {
+        i=i+2;
+    }else{
+        i=i*2;
+    }
+
 	var text1_id = text1, text2_id = text2, text3_id = text3;
     requirejs([text1], function(text1) {
         document.getElementById(text1_id).innerHTML = text1.Text();
@@ -102,6 +119,12 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 }
 function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,name5){
 
+    if ($(window).width() > 480) {
+        i=i+2;
+    }else{
+        i=i*2;
+    }
+
     $('.page').eq(i).append('\
         <div id="book_L_type2" class="grid">\
             <div class="container_bookL_type2">\
@@ -131,6 +154,12 @@ function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 
 }
 function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,name5){
+
+    if ($(window).width() > 480) {
+        i=i+2;
+    }else{
+        i=i*2;
+    }
 
     $('.page').eq(i).append('\
         <div id="book_R_type2" class="grid">\
