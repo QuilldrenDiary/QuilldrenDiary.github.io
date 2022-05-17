@@ -278,6 +278,7 @@ function previous_phone(){
 		setTimeout(
 			function() {
 				$('#earringsL').css("transition", "0s");
+				$(".flip-card").eq(i).css("z-index","3");
 				$(".flip-card").eq(i+1).css("z-index","2");
 				i = i - 1;
 				$('#earringsL').attr('onclick', 'previous()');
