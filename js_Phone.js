@@ -15,6 +15,8 @@ function initialize_phone(){
 	$('#ink').css("display","block");
 	$('#book-bg').remove();
 	$('#quilldren').unbind("click");
+	$('#earringsL').unbind("click");
+	$('#earringsR').unbind("click");
 
 	$('#cup').css("transition", "0.5s"); 
 	$('#cup').css("opacity", "1"); 
@@ -25,7 +27,6 @@ function initialize_phone(){
 
 	$('#book').css("transition", "0.5s"); 
 	$('#book').css("transform", "translate(calc(0 * var(--unit)),calc(35 * var(--unit)))"); 
-	$('#book').addClass("icon"); 
 	$('#book').css("z-index", "5"); 
 	$('#book2').css("transition", "0.5s"); 
 	$('#book2').css("transform", "rotate(-4.81deg)");
@@ -43,7 +44,6 @@ function initialize_phone(){
 	
 	$('#quilldren').css("transition", "0.5s"); 
 	$('#quilldren').css("background-image", "url('img/Quildren-2.gif')"); 
-	$('#quilldren').removeClass("icon"); 
 	$('#quilldren').css("width", "calc(65 * var(--unit))"); 
 	$('#quilldren').css("height", "calc(65 * var(--unit))"); 
 	$('#quilldren').css("transform", "translate(calc(55 * var(--unit)),calc(100 * var(--unit)))"); 
@@ -97,10 +97,8 @@ function change_scene_phone(){
 	$('#toast').css("transition", "0.5s"); 
 	$('#toast').css("opacity", "1"); 
 	
-	
 	$('#book').css("transition", "0.5s"); 
 	$('#book').css("transform", "translate(calc(-6 * var(--unit)),calc(35 * var(--unit)))"); 
-	$('#book').removeClass("icon"); 
 	$('#book').css("z-index", "7"); 
 	$('#book2').css("transition", "0.5s"); 
 	$('#book2').css("transform", "rotate(0)");
@@ -153,7 +151,6 @@ function change_scene_phone(){
 			$('#book2').css("transition", "0s"); 
 			$('.flip-card').css("transition", "0s"); 
 			$('#quilldren').css("transition", "0s"); 
-			$('#quilldren').addClass("icon"); 
 			$('#quilldren').click(initialize_phone);
 			$('#twitter').css("transition", "0s"); 
 			$('#twitter2').css("transition", "0s"); 
@@ -174,15 +171,18 @@ function first_page_phone(){
 	$('#earringsL').css("opacity", "1"); 
 	$('#earringsR').css("transition", "0.5s"); 
 	$('#earringsR').css("opacity", "1"); 
+	$('#earringsL').click(previous_phone);
+	$('#earringsR').click(next_phone);
+
 	$(".flip-card-inner").eq(0).css("transform","rotateY(-180deg)");
 	$(".flip-card").eq(1).css("z-index","4");
+	$('#book').unbind("click");
 	
 	setTimeout(
 		function() {
 			$('#earringsL').css("transition", "0s"); 
 			$('#earringsR').css("transition", "0s"); 
 			$(".flip-card-back").eq(0).css("z-index","3");
-			$('#book').unbind("click");
 	}, 250);
 }
 

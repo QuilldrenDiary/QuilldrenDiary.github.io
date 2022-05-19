@@ -126,7 +126,7 @@ body {
 		transform: translate(calc(5 * var(--unit)),calc(22 * var(--unit)));
 		opacity:0;
 		z-index:1;
-		
+		filter: drop-shadow(0 0 0.3vw black);
 	}
 	#earringsR{
 		width:calc(6 * var(--unit)); 
@@ -138,6 +138,7 @@ body {
 		transform: translate(calc(89 * var(--unit)),calc(22 * var(--unit)));
 		opacity:0;
 		z-index:1;
+		filter: drop-shadow(0 0 0.3vw black);
 	}
 	
 	#pad{

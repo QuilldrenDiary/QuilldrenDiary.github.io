@@ -34,6 +34,8 @@ function initialize_PC(){
 	$('#ink').css("display","block");
 	$('#book-bg').remove();
 	$('#quilldren').unbind("click");
+	$('#earringsL').unbind("click");
+	$('#earringsR').unbind("click");
 
 	$('#cup').css("transition", "0.5s"); 
 	$('#cup').css("opacity", "1"); 
@@ -76,6 +78,7 @@ function initialize_PC(){
 
 	setTimeout(
 		function() {
+			$('#book').css("transition", "0s"); 
 			$('#pen').css("transition", "0s"); 
 			$('#pen2').css("transition", "0s"); 
 			$('#book').css("transition", "0s"); 
@@ -99,7 +102,6 @@ function change_scene_PC(){
 	
 	$('#book').css("transition", "0.5s"); 
 	$('#book').css("transform", "translate(calc(29 * var(--unit)),calc(-1.5 * var(--unit))) scale(110%)"); 
-	$('#book').removeClass("icon"); 
 	$('#book').css("z-index", "1"); 
 	$('#book2').css("transition", "0.5s"); 
 	$('#book2').css("transform", "translate(0px,calc(1.5 * var(--unit))) rotate(0)"); 
@@ -148,6 +150,7 @@ function change_scene_PC(){
 			$('#toast').css("display","none");
 			$('#ink').css("display","none");
 			$('#book').click(first_page_PC);
+			$('#book').css("transition", "0s"); 
 	}, 200);
 	
 };
@@ -156,8 +159,12 @@ function first_page_PC(){
 	i=1;
 	$('#earringsL').css("opacity", "1"); 
 	$('#earringsR').css("opacity", "1"); 
+	$('#earringsL').click(previous_PC);
+	$('#earringsR').click(next_PC);
 	
+	$('#book').css("transition", "0.5s"); 
 	$('#book').css("transform", "translate(calc(44.6 * var(--unit)),calc(-1.5 * var(--unit))) scale(110%)"); 
+	$('#book').removeClass("icon"); 
 	$(".flip-card-inner").eq(0).css("transform","rotateY(-180deg)");
 	
 	setTimeout(

@@ -2,7 +2,7 @@ function create_page(i){
     if ($(window).width() > 480) {
         i=i+1;
     }else{
-        i=i+2;
+        i=i+3;
     }
     var j;
     for(j=0;j<i;j++){
@@ -22,7 +22,7 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
     if ($(window).width() > 480) {
         i=i+2;
     }else{
-        i=i*2;
+        i=i*2+2;
     }
 
 	var text1_id = text1, text2_id = text2, text3_id = text3;
@@ -72,7 +72,7 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
     if ($(window).width() > 480) {
         i=i+2;
     }else{
-        i=i*2;
+        i=i*2+2;
     }
 
 	var text1_id = text1, text2_id = text2, text3_id = text3;
@@ -122,7 +122,7 @@ function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
     if ($(window).width() > 480) {
         i=i+2;
     }else{
-        i=i*2;
+        i=i*2+2;
     }
 
     $('.page').eq(i).append('\
@@ -158,7 +158,7 @@ function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
     if ($(window).width() > 480) {
         i=i+2;
     }else{
-        i=i*2;
+        i=i*2+2;
     }
 
     $('.page').eq(i).append('\
