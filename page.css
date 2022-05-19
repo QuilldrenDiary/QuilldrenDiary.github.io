@@ -1,4 +1,29 @@
-
+#title_page{
+	background-image:url('img/page-title.png');
+	background-size: cover;
+	margin-top:1%; 
+	height:97%; 
+	width:97%;
+}
+@media (min-width: 480px){
+	#end_paper{
+		background-image: url(img/end-paper.png);
+		background-size: cover;
+		margin-top: 41%;
+		margin-left: 22%;
+		height: calc(17 *var(--unit));
+		width: calc(17 *var(--unit));
+	}
+}@media (max-width: 480px){
+	#end_paper{
+		background-image: url(img/end-paper.png);
+		background-size: cover;
+		margin-top: 41%;
+		margin-left: 22%;
+		height: calc(45 *var(--unit));
+		width: calc(45 *var(--unit));
+	}
+}
 .grid{
 	font-size: 30px;
 	text-align: center;
@@ -84,146 +109,146 @@
 	overflow:hidden;
 }
 
-#book_L_type1{
+.book_L_type1{
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 2;
 	grid-row-end: 7;
 }
-#book_R_type1{
+.book_R_type1{
 	grid-column-start: 4;
 	grid-column-end: 6;
 	grid-row-start: 2;
 	grid-row-end: 7;
 }
-#pic1_L_type1{
+.pic1_L_type1{
 	grid-column-start: 2;
 	grid-column-end: 6;
 	grid-row-start: 2;
 	grid-row-end: 5;
 }
-#pic2_L_type1{
+.pic2_L_type1{
 	grid-column-start: 11;
 	grid-column-end: 14;
 	grid-row-start: 8;
 	grid-row-end: 9;
 }
-#pic3_L_type1{
+.pic3_L_type1{
 	grid-column-start: 11;
 	grid-column-end: 14;
 	grid-row-start: 10;
 	grid-row-end: 15;
 }
-#name1_L_type1{
+.name1_L_type1{
 	grid-column-start: 2;
 	grid-column-end: 6;
 	grid-row-start: 1;
 	grid-row-end: 2;
 }
-#name2_L_type1{
+.name2_L_type1{
 	grid-column-start: 11;
 	grid-column-end: 14;
 	grid-row-start: 7;
 	grid-row-end: 8;
 }
-#name3_L_type1{
+.name3_L_type1{
 	grid-column-start: 11;
 	grid-column-end: 14;
 	grid-row-start: 9;
 	grid-row-end: 10;
 }
-#text1_L_type1{
+.text1_L_type1{
 	grid-column-start: 8;
 	grid-column-end: 15;
 	grid-row-start: 2;
 	grid-row-end: 4;
 }
-#text2_L_type1{
+.text2_L_type1{
 	grid-column-start: 3;
 	grid-column-end: 7;
 	grid-row-start: 7;
 	grid-row-end: 11;
 }
-#text3_L_type1{
+.text3_L_type1{
 	grid-column-start: 4;
 	grid-column-end: 10;
 	grid-row-start: 12;
 	grid-row-end: 14;
 }
-#stc1_L_type1{
+.stc1_L_type1{
 	grid-column-start: 12;
 	grid-column-end: 13;
 	grid-row-start: 3;
 	grid-row-end: 6;
 }
-#stc2_L_type1{
+.stc2_L_type1{
 	grid-column-start: 5;
 	grid-column-end: 9;
 	grid-row-start: 13;
 	grid-row-end: 15;
 }
 
-#pic1_R_type1{
+.pic1_R_type1{
 	grid-column-start: 4;
 	grid-column-end: 8;
 	grid-row-start: 2;
 	grid-row-end: 3;
 }
-#pic2_R_type1{
+.pic2_R_type1{
 	grid-column-start: 3;
 	grid-column-end: 6;
 	grid-row-start: 4;
 	grid-row-end: 9;
 }
-#pic3_R_type1{
+.pic3_R_type1{
 	grid-column-start: 11;
 	grid-column-end: 16;
 	grid-row-start: 12;
 	grid-row-end: 15;
 }
-#name1_R_type1{
+.name1_R_type1{
 	grid-column-start: 4;
 	grid-column-end: 8;
 	grid-row-start: 1;
 	grid-row-end: 2;
 }
-#name2_R_type1{
+.name2_R_type1{
 	grid-column-start: 3;
 	grid-column-end: 6;
 	grid-row-start: 3;
 	grid-row-end: 4;
 }
-#name3_R_type1{
+.name3_R_type1{
 	grid-column-start: 11;
 	grid-column-end: 15;
 	grid-row-start: 11;
 	grid-row-end: 12;
 }
-#text1_R_type1{
+.text1_R_type1{
 	grid-column-start: 12;
 	grid-column-end: 16;
 	grid-row-start: 2;
 	grid-row-end: 5;
 }
-#text2_R_type1{
+.text2_R_type1{
 	grid-column-start: 7;
 	grid-column-end: 15;
 	grid-row-start: 6;
 	grid-row-end: 8;
 }
-#text3_R_type1{
+.text3_R_type1{
 	grid-column-start: 2;
 	grid-column-end: 9;
 	grid-row-start: 11;
 	grid-row-end: 14;
 }
-#stc1_R_type1{
+.stc1_R_type1{
 	grid-column-start: 13;
 	grid-column-end: 14;
 	grid-row-start: 7;
 	grid-row-end: 10;
 }
-#stc2_R_type1{
+.stc2_R_type1{
 	grid-column-start: 5;
 	grid-column-end: 7;
 	grid-row-start: 13;
@@ -279,134 +304,134 @@
 	padding-top: 4.5%
 }
 
-#book_L_type2{
+.book_L_type2{
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 2;
 	grid-row-end: 7;
 }
-#book_R_type2{
+.book_R_type2{
 	grid-column-start: 4;
 	grid-column-end: 6;
 	grid-row-start: 2;
 	grid-row-end: 7;
 }
-#pic1_L_type2{
+.pic1_L_type2{
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 2;
 	grid-row-end: 4;
 }
-#pic2_L_type2{
+.pic2_L_type2{
 	grid-column-start: 5;
 	grid-column-end: 8;
 	grid-row-start: 3;
 	grid-row-end: 6;
 }
-#pic3_L_type2{
+.pic3_L_type2{
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 5;
 	grid-row-end: 7;
 }
-#pic4_L_type2{
+.pic4_L_type2{
 	grid-column-start: 3;
 	grid-column-end: 6;
 	grid-row-start: 8;
 	grid-row-end: 9;
 }
-#pic5_L_type2{
+.pic5_L_type2{
 	grid-column-start: 7;
 	grid-column-end: 8;
 	grid-row-start: 8;
 	grid-row-end: 9;
 }
-#name1_L_type2{
+.name1_L_type2{
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 1;
 	grid-row-end: 1;
 }
-#name2_L_type2{
+.name2_L_type2{
 	grid-column-start: 5;
 	grid-column-end: 8;
 	grid-row-start: 2;
 	grid-row-end: 3;
 }
-#name3_L_type2{
+.name3_L_type2{
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 4;
 	grid-row-end: 5;
 }
-#name4_L_type2{
+.name4_L_type2{
 	grid-column-start: 3;
 	grid-column-end: 6;
 	grid-row-start: 7;
 	grid-row-end: 8;
 }
-#name5_L_type2{
+.name5_L_type2{
 	grid-column-start: 7;
 	grid-column-end: 8;
 	grid-row-start: 7;
 	grid-row-end: 8;
 }
 
-#pic1_R_type2{
+.pic1_R_type2{
 	grid-column-start: 6;
 	grid-column-end: 8;
 	grid-row-start: 2;
 	grid-row-end: 4;
 }
-#pic2_R_type2{
+.pic2_R_type2{
 	grid-column-start: 2;
 	grid-column-end: 5;
 	grid-row-start: 3;
 	grid-row-end: 6;
 }
-#pic3_R_type2{
+.pic3_R_type2{
 	grid-column-start: 6;
 	grid-column-end: 8;
 	grid-row-start: 5;
 	grid-row-end: 7;
 }
-#pic4_R_type2{
+.pic4_R_type2{
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 8;
 	grid-row-end: 9;
 }
-#pic5_R_type2{
+.pic5_R_type2{
 	grid-column-start: 4;
 	grid-column-end: 7;
 	grid-row-start: 8;
 	grid-row-end: 9;
 }
-#name1_R_type2{
+.name1_R_type2{
 	grid-column-start: 6;
 	grid-column-end: 8;
 	grid-row-start: 1;
 	grid-row-end: 2;
 }
-#name2_R_type2{
+.name2_R_type2{
 	grid-column-start: 2;
 	grid-column-end: 5;
 	grid-row-start: 2;
 	grid-row-end: 3;
 }
-#name3_R_type2{
+.name3_R_type2{
 	grid-column-start: 6;
 	grid-column-end: 8;
 	grid-row-start: 4;
 	grid-row-end: 5;
 }
-#name4_R_type2{
+.name4_R_type2{
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 7;
 	grid-row-end: 8;
 }
-#name5_R_type2{
+.name5_R_type2{
 	grid-column-start: 4;
 	grid-column-end: 7;
 	grid-row-start: 7;
