@@ -36,6 +36,7 @@ function initialize_PC(){
 	$('#quilldren').unbind("click");
 	$('#earringsL').unbind("click");
 	$('#earringsR').unbind("click");
+	$('.yellow').remove();
 
 	$('#cup').css("transition", "0.5s"); 
 	$('#cup').css("opacity", "1"); 
@@ -93,6 +94,9 @@ function initialize_PC(){
 
 function change_scene_PC(){
 
+	$('#book2').append('<div class="yellow"></div>');
+	
+	$('#book').removeClass("icon"); 
 	$('#cup').css("transition", "0.5s"); 
 	$('#cup').css("opacity", "0"); 
 	$('#toast').css("transition", "0.5s"); 
@@ -161,10 +165,10 @@ function first_page_PC(){
 	$('#earringsR').css("opacity", "1"); 
 	$('#earringsL').click(previous_PC);
 	$('#earringsR').click(next_PC);
+	$('.yellow').remove();
 	
 	$('#book').css("transition", "0.5s"); 
 	$('#book').css("transform", "translate(calc(44.6 * var(--unit)),calc(-1.5 * var(--unit))) scale(110%)"); 
-	$('#book').removeClass("icon"); 
 	$(".flip-card-inner").eq(0).css("transform","rotateY(-180deg)");
 	
 	setTimeout(
@@ -177,7 +181,7 @@ function first_page_PC(){
 }
 
 function next_PC(){
-	$('#earringsR').attr('onclick', '');
+	$('#earringsR').unbind("click");
 	if(i ==(($(".flip-card").length-1)/2)){
 		$('#book-bg').css("background-image","url('img/book-bgL.png')")
 	}
@@ -191,7 +195,7 @@ function next_PC(){
 			function() {
 				$('#earringsL').css("transition", "0s");
 				i = i + 1;
-				$('#earringsR').attr('onclick', 'next()');
+				$('#earringsR').click(next_PC);
 		}, 250);
 	}else if(i < $(".flip-card-inner").length -1){
 
@@ -205,7 +209,7 @@ function next_PC(){
 				$(".flip-card").eq(i-1).css("z-index","2");
 				$(".flip-card").eq(i).css("z-index","3");
 				i = i + 1;
-				$('#earringsR').attr('onclick', 'next()');
+				$('#earringsR').click(next_PC);
 		}, 250);
 	}else if(i == $(".flip-card-inner").length -1){
 		$(".flip-card-inner").eq(i).css("transform","rotateY(-180deg)");
@@ -220,20 +224,20 @@ function next_PC(){
 				$(".flip-card").eq(i-1).css("z-index","2");
 				$(".flip-card").eq(i).css("z-index","3");
 				i = i + 1;
-				$('#earringsR').attr('onclick', 'next()');
+				$('#earringsR').click(next_PC);
 		}, 500);
 	}else{
 
 		setTimeout(
 			function() {
-				$('#earringsR').attr('onclick', 'next()');
+				$('#earringsR').click(next_PC);
 		}, 250);
 	}
 
 }
 
 function previous_PC(){
-	$('#earringsL').attr('onclick', '');
+	$('#earringsL').unbind("click");
 
 	if((i-1) ==(($(".flip-card").length-1)/2)){
 		$('#book-bg').css("background-image","url('img/book-bgR.png')")
@@ -245,7 +249,7 @@ function previous_PC(){
 
 		setTimeout(
 			function() {
-				$('#earringsL').attr('onclick', 'previous()');
+				$('#earringsL').click(previous_PC);
 				$('#earringsR').css("transition", "0s"); 
 		}, 300);
 	}
@@ -259,7 +263,7 @@ function previous_PC(){
 				$(".flip-card").eq(i).css("z-index","2");
 				$(".flip-card").eq(i-1).css("z-index","3");
 				i = i - 1;
-				$('#earringsL').attr('onclick', 'previous()');
+				$('#earringsL').click(previous_PC);
 		}, 250);
 	}else if(i == 1){
 		$(".flip-card-inner").eq(0).css("transform","rotateY(0deg)");
@@ -271,13 +275,13 @@ function previous_PC(){
 				$('#earringsL').css("transition", "0s");
 				$(".flip-card").eq(i+1).css("z-index","2");
 				i = i - 1;
-				$('#earringsL').attr('onclick', 'previous()');
+				$('#earringsL').click(previous_PC);
 		}, 250);
 	}else{
 
 		setTimeout(
 			function() {
-				$('#earringsL').attr('onclick', 'previous()');
+				$('#earringsL').click(previous_PC);
 		}, 250);
 	}
 }

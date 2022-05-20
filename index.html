@@ -1,4 +1,4 @@
-<html lang="zh-TW">
+<html lang="zh-TW" ontouchmove="event.preventDefault();">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="css_Phone.css">
 	<link rel="stylesheet" type="text/css" href="page.css">
 	<link rel="stylesheet" type="text/css" href="magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="shinning_effect.css">
 
 <body>
 	<!--Loading頁面-->
@@ -56,6 +57,8 @@
 </body>
 </html>
 <script>
+	var touchable=0;//手機版是否可滑動的判定
+
 	/*加上換場*/
 	$('#book').click(changeScene);
 
@@ -66,13 +69,9 @@
 	insert_page_type2L(3,'pic1.png','pic2.png','pic3.png','pic4.png','pic5.png','test1','test2','test3','test4','test5');
 	insert_page_type2R(4,'pic1.png','pic2.png','pic3.png','pic4.png','pic5.png','test1','test2','test3','test4','test5');
 
-	/*書名頁*/	
-	if ($(window).width() > 480) {
-		$('.flip-card-front').eq(1).append('<div style="background-image:url(\'img/page-title.png\');background-size: cover;margin-top:1%; height:97%; width:97%;"></div>');
-	}else{
-		$('.flip-card-front').eq(1).append('<div style="background-image:url(\'img/page-title.png\');background-size: cover;margin-top:1%; height:97%; width:97%;"></div>');
-	}
-
+	/*書名頁、尾頁*/	
+	$('.flip-card-front').eq(1).append('<div id="title_page"></div>');
+	insert_last_page(5);//內頁頁數+1
 
 	var i = 0;/*計算頁數*/
 	
@@ -85,7 +84,9 @@
 			setOffset();
 		});
 	});
-
+	window.addEventListener("orientationchange", function(){
+		location.reload();
+	}, false);
 	/*預先載入頁面*/
 	window.onload = function() {	
 		$('#loading').css("transition", "0.5s"); 
@@ -155,4 +156,5 @@
 				'</div>'
 		}
 	});
+
 </script>

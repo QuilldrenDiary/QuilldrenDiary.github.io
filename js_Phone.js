@@ -3,6 +3,9 @@
 /* 　　 */
 
 function initialize_phone(){
+	touchable=0;
+	i=0;
+
 	$(".flip-card-inner").css("transform","rotateY(0deg)");
 	$('#earringsL').css("transition", "0.5s"); 
 	$('#earringsL').css("opacity", "0"); 
@@ -34,7 +37,6 @@ function initialize_phone(){
 	$('#book2').css("height", "calc(117.25 * var(--unit))");  
 	$('#book2').css("background-image", "url('img/book.png')");  
 	$('#book').unbind("click");
-	$('#book').click(change_scene_phone);
 
 	$('.flip-card').css("transition", "0.5s"); 
 	$('.flip-card').css("padding-top", "calc(3.4 * var(--unit))"); 
@@ -57,7 +59,7 @@ function initialize_phone(){
 	$('#pad2').css("height", "calc(57.08 * var(--unit))"); 
 	
 	$('#twitter').css("transition", "0.5s"); 
-	$('#twitter').css("transform", "translate(calc(-12 * var(--unit)),calc(165 * var(--unit)))"); 
+	$('#twitter').css("transform", "translate(calc(-12 * var(--unit)),calc(155 * var(--unit)))"); 
 	$('#twitter2').css("transition", "0.5s"); 
 	$('#twitter2').css("background-image", "url('img/Twitter.png')"); 
 	$('#twitter2').css("transform", "rotate(-13deg)"); 
@@ -89,6 +91,7 @@ function initialize_phone(){
 }
 
 function change_scene_phone(){
+	touchable=1;
 	
 	$('#cup').css("transition", "0.5s"); 
 	$('#cup').css("opacity", "0"); 
@@ -187,17 +190,20 @@ function first_page_phone(){
 }
 
 function next_phone(){
-	$('#earringsR').attr('onclick', '');
+	$('#earringsR').unbind("click");
 	if(i == 0){
 		$(".flip-card-inner").eq(0).css("transform","rotateY(-180deg)");
 		$(".flip-card").eq(1).css("z-index","3");
 		$('#earringsL').css("transition", "0.5s"); 
 		$('#earringsL').css("opacity", "1"); 
+		$('#earringsR').css("transition", "0.5s"); 
+		$('#earringsR').css("opacity", "1"); 
 		setTimeout(
 			function() {
 				$('#earringsL').css("transition", "0s");
+				$('#earringsR').css("transition", "0s");
 				i = i + 1;
-				$('#earringsR').attr('onclick', 'next()');
+				$('#earringsR').click(next_phone);
 		}, 250);
 	}else if(i < $(".flip-card-inner").length -1){
 
@@ -211,7 +217,7 @@ function next_phone(){
 				$(".flip-card").eq(i-1).css("z-index","2");
 				$(".flip-card").eq(i).css("z-index","3");
 				i = i + 1;
-				$('#earringsR').attr('onclick', 'next()');
+				$('#earringsR').click(next_phone);
 		}, 250);
 	}else if(i == $(".flip-card-inner").length -1){
 		$(".flip-card-inner").eq(i).css("transform","rotateY(-180deg)");
@@ -222,7 +228,8 @@ function next_phone(){
 		$("#earringsR").css("opacity","0");
 		$('#book2').css("transition", "0.5s"); 
 		$("#book2").css("transform","translateX(calc(87 * var(--unit)))");
-		$('#book2').css("background-image", "none"); 
+		$('#book2').css("background-image", "none");
+		$('#book-bg').css("transition", "0.5s"); 
 		$('#book-bg').css("left", "calc(6.5 * var(--unit))"); 
 		$("#earringsR").css("opacity","0");
 
@@ -231,33 +238,37 @@ function next_phone(){
 				$(".flip-card").eq(i-1).css("z-index","2");
 				$(".flip-card").eq(i).css("z-index","3");
 				i = i + 1;
-				$('#earringsR').attr('onclick', 'next()');
+				$('#earringsR').click(next_phone);
 		}, 500);
 	}else{
 
 		setTimeout(
 			function() {
-				$('#earringsR').attr('onclick', 'next()');
+				$('#earringsR').click(next_phone);
 		}, 250);
 	}
 
 }
 
 function previous_phone(){
-	$('#earringsL').attr('onclick', '');
+	$('#earringsL').unbind("click");
 	if(i == $(".flip-card-inner").length){
+		$('#earringsL').css("transition", "0.5s"); 
+		$("#earringsL").css("opacity","1");
 		$('#earringsR').css("transition", "0.5s"); 
 		$("#earringsR").css("opacity","1");
 		$("#book2").css("transform","translateX(calc(0 * var(--unit)))");
 		$('#book-bg').css("left", "calc(-82 * var(--unit))"); 
+		$('#book-bg').css("transition", "0.3s"); 
 
 		setTimeout(
 			function() {
-				$('#earringsL').attr('onclick', 'previous()');
+				$('#earringsL').css("transition", "0s"); 
 				$('#earringsR').css("transition", "0s"); 
 				$('#book2').css("background-image", "url('img/book.png')"); 
 		}, 300);
 	}
+
 	if(i > 1){
 		$(".flip-card-inner").eq(i-1).css("transform","rotateY(0deg)");
 		$(".flip-card").eq(i-2).css("z-index","3");
@@ -268,7 +279,7 @@ function previous_phone(){
 				$(".flip-card").eq(i).css("z-index","2");
 				$(".flip-card").eq(i-1).css("z-index","3");
 				i = i - 1;
-				$('#earringsL').attr('onclick', 'previous()');
+				$('#earringsL').click(previous_phone);
 		}, 250);
 	}else if(i == 1){
 		$(".flip-card-inner").eq(0).css("transform","rotateY(0deg)");
@@ -281,14 +292,72 @@ function previous_phone(){
 				$(".flip-card").eq(i).css("z-index","3");
 				$(".flip-card").eq(i+1).css("z-index","2");
 				i = i - 1;
-				$('#earringsL').attr('onclick', 'previous()');
+				$('#earringsL').click(previous_phone);
 		}, 250);
 	}else{
 
 		setTimeout(
 			function() {
-				$('#earringsL').attr('onclick', 'previous()');
+				$('#earringsL').click(previous_phone);
 		}, 250);
 	}
 
 }
+//////////////////////////////////////////////////////////////////////
+document.addEventListener('touchstart', handleTouchStart, false);        
+document.addEventListener('touchmove', handleTouchMove, false);
+
+var xDown = null;                                                        
+var yDown = null;
+
+function getTouches(evt) {
+  return evt.touches ||             // browser API
+         evt.originalEvent.touches; // jQuery
+}                                                     
+                                                                         
+function handleTouchStart(evt) {
+    const firstTouch = getTouches(evt)[0];                                      
+    xDown = firstTouch.clientX;                                      
+    yDown = firstTouch.clientY;                                      
+};                                                
+                                                                         
+function handleTouchMove(evt) {
+    if ( ! xDown || ! yDown ) {
+        return;
+    }
+
+    var xUp = evt.touches[0].clientX;                                    
+    var yUp = evt.touches[0].clientY;
+
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+                                                                         
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) && touchable==1 ) {/*most significant*/
+        if ( xDiff > 0 ) {
+            next_phone();
+        } else {
+            previous_phone();
+        }                       
+    } else {
+        if ( yDiff > 0 ) {
+            /* down swipe */ 
+        } else { 
+            /* up swipe */
+        }                                                                 
+    }
+    /* reset values */
+    xDown = null;
+    yDown = null;                                             
+};
+
+/* 禁止點兩下放大 */
+$(function(){
+	document.addEventListener('touchstart', function(event) {
+	if (event.touches.length > 1) {
+			event.preventDefault()
+	}
+	});
+	document.addEventListener('gesturestart', function(event) {
+		event.preventDefault()
+	});
+})

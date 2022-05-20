@@ -1,0 +1,46 @@
+  /* Yellow Shadow */
+  @-moz-keyframes yellow {
+    0%, 100% {
+      -moz-box-shadow: 1px 0px 30px 6px #ffc400, inset 0px 0px 15px rgba(255, 255, 255, 0.5);
+      box-shadow: 1px 0px 30px 6px #ffc400, inset 0px 0px 15px rgba(255, 255, 255, 0.5); }
+  
+    50% {
+      -moz-box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0);
+      box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+  
+  @-webkit-keyframes yellow {
+    0%, 100% {
+      -webkit-box-shadow:1px 0px 30px 6px #ffc400, inset 0px 0px 15px rgba(255, 255, 255, 0.5);
+      box-shadow: 1px 0px 30px 6px #ffc400, inset 0px 0px 15px rgba(255, 255, 255, 0.5);}
+  
+    50% {
+      -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0);
+      box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+  
+  @-o-keyframes yellow {
+    0%, 100% {
+      box-shadow: 1px 0px 30px 6px #ffc400, inset 0px 0px 15px rgba(255, 255, 255, 0.5); }
+  
+    50% {
+      box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+  
+  @keyframes yellow {
+    0%, 100% {
+      box-shadow:1px 0px 30px 6px #ffc400, inset 0px 0px 15px rgba(255, 255, 255, 0.5); }
+  
+    50% {
+      box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+ 
+  /* Yellow Background */
+  .yellow {
+    margin-top: 3%;
+    margin-left: 4.3%;
+    height: 97%;
+    width: 95%;
+    border-radius: 5%;
+    -webkit-animation: yellow 2s infinite;
+    -moz-animation: yellow 2s infinite;
+    -o-animation: yellow 2s infinite;
+    animation: yellow 2s infinite; 
+  }
+  

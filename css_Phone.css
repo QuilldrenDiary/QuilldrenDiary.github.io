@@ -1,6 +1,6 @@
 @media (max-width: 480px){
 	#twitter{
-		transform: translate(calc(-12 * var(--unit)),calc(165 * var(--unit)));
+		transform: translate(calc(-12 * var(--unit)),calc(155 * var(--unit)));
 		position: absolute;
 		top: var(--offsetY); left: var(--offsetX);
 		z-index:1;
@@ -119,7 +119,7 @@
 		height:calc(50 * var(--unit));
 		background-image:url("img/Ink.png");
 		background-size: cover;
-		transform: translate(calc(-20 * var(--unit)),calc(-14 * var(--unit)));
+		transform: translate(calc(-20 * var(--unit)),calc(-10 * var(--unit)));
 		position: absolute;
 		top: var(--offsetY); left: var(--offsetX);
 		z-index:7;
