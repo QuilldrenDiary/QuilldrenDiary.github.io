@@ -47,12 +47,36 @@ body {
 }
 
 @media (min-width: 480px){
+	.stickers:hover{
+		margin-top: calc(0.1 * var(--unit));
+		margin-left: calc(0.1 * var(--unit));
+		filter: drop-shadow(0.48vw 0.48vw 0.5vw black);
+	}
 	.icon:hover{
 		margin-top: calc(0.35 * var(--unit));
 		margin-left: calc(0.35 * var(--unit));
 		filter: drop-shadow(0.48vw 0.48vw 0.5vw black);
 	}
-
+	#credits{
+		position: absolute;
+		top: calc(21.9 * var(--unit));	
+		left: calc(17 * var(--unit));
+		width: calc(12 * var(--unit));
+		height: calc(7.33 * var(--unit));
+		background-image: url(img/credits.png);
+		background-size: cover;
+		z-index: 100;
+	}
+	#resources{
+		position: absolute;
+		top: calc(30.2 * var(--unit));
+		left: calc(17 * var(--unit));
+		width: calc(12 * var(--unit));
+		height: calc(7.33 * var(--unit));
+		background-image: url(img/resources.png);
+		background-size: cover;
+		z-index: 100;
+	}
 	#ink {
 		width:calc(20 * var(--unit));
 		height:calc(20 * var(--unit));

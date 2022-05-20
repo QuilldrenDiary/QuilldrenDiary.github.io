@@ -16,6 +16,8 @@ function initialize_phone(){
 	$("#cover").css("z-index","5");
 	$('#cup').css("display","block");
 	$('#ink').css("display","block");
+	$('#resources').css("display","none");
+	$('#credits').css("display","none");
 	$('#book-bg').remove();
 	$('#quilldren').unbind("click");
 	$('#earringsL').unbind("click");
@@ -161,6 +163,8 @@ function change_scene_phone(){
 			$('#pad2').css("transition", "0s"); 
 			$('#book-bg').css("opacity", "1"); 
 			
+			$('#resources').css("display","block");
+			$('#credits').css("display","block");
 			$('#cup').css("display","none");
 			$('#ink').css("display","none");
 			$('#book').click(first_page_phone);

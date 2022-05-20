@@ -1,4 +1,26 @@
 @media (max-width: 480px){
+	#credits{
+		position: absolute;
+		top: calc(65.5 * var(--unit));
+		left: calc(51.3 * var(--unit));
+		width: calc(36 * var(--unit));
+		height: calc(22 * var(--unit));
+		background-image: url(img/credits.png);
+		background-size: cover;
+		z-index: 100;
+		display: none;
+	}
+	#resources{
+		position: absolute;
+		top: calc(90.2 * var(--unit));
+		left: calc(51.1 * var(--unit));
+		width: calc(36 * var(--unit));
+		height: calc(22 * var(--unit));
+		background-image: url(img/resources.png);
+		background-size: cover;
+		z-index: 100;
+		display: none;
+	}
 	#twitter{
 		transform: translate(calc(-12 * var(--unit)),calc(155 * var(--unit)));
 		position: absolute;

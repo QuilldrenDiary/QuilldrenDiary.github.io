@@ -12,6 +12,8 @@ function create_page(i){
     $('.flip-card-inner').append('<div class="flip-card-front page"></div><div class="flip-card-back page" ></div>');
     $('.flip-card').eq(0).attr('id','cover');
     $('.flip-card-front').eq(0).attr('id','page_cover');
+    $('.flip-card-front').eq(0).append('<div id="credits" class="stickers"></div>');
+    $('.flip-card-front').eq(0).append('<div id="resources" class="stickers"></div>');
     $('.flip-card-back').eq(0).attr('id','page_first');
     $('.flip-card-front').eq($('.flip-card-front').length-1).attr('id','page_last');
     $('.flip-card-back').eq($('.flip-card-back').length-1).attr('id','page_back_cover');
