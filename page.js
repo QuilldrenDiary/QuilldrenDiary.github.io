@@ -77,6 +77,11 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
             </div>\
         </div>\
     ');
+    popup_article(text1, '.stc1_L_type1');
+    popup_article(text3, '.stc2_L_type1');
+    popup_photo(pic1, '.pic1_L_type1');
+    popup_photo(pic2, '.pic2_L_type1');
+    popup_photo(pic3, '.pic3_L_type1');
 }
 function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3,stc1,stc2){
 
@@ -136,7 +141,11 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
             </div>\
         </div>\
     ');
-
+    popup_article(text2, '.stc1_R_type1');
+    popup_article(text3, '.stc2_R_type1');
+    popup_photo(pic1, '.pic1_R_type1');
+    popup_photo(pic2, '.pic2_R_type1');
+    popup_photo(pic3, '.pic3_R_type1');
 }
 function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,name5){
 
@@ -177,7 +186,11 @@ function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
             </div>\
         </div>\
     ');
-
+    popup_photo(pic1, '.pic1_L_type2');
+    popup_photo(pic2, '.pic2_L_type2');
+    popup_photo(pic3, '.pic3_L_type2');
+    popup_photo(pic4, '.pic4_L_type2');
+    popup_photo(pic5, '.pic5_L_type2');
 }
 function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,name5){
 
@@ -218,7 +231,11 @@ function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
             </div>\
         </div>\
     ')
-
+    popup_photo(pic1, '.pic1_R_type2');
+    popup_photo(pic2, '.pic2_R_type2');
+    popup_photo(pic3, '.pic3_R_type2');
+    popup_photo(pic4, '.pic4_R_type2');
+    popup_photo(pic5, '.pic5_R_type2');
 }
 function insert_last_page(i){
     if ($(window).width() > 480) {
