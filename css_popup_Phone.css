@@ -1,0 +1,23 @@
+@media (max-width: 480px){
+	.credits-bg {
+		position: relative;
+		margin: 20px auto;
+		width: 81vw;
+		height: 108vw;
+		padding: 0px 10px;
+		background-image: url("img/credits-popup-bg.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.credits-container {
+		width: 75vw;
+		height: 107vw;
+		margin: 0px auto;
+		overflow: auto;
+		padding-left: 3vw
+	}
+	.credits-inside {
+		width: 75vw;
+		height: auto;
+	}
+}
