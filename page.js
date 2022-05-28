@@ -1,11 +1,11 @@
-function create_page(i){
+function create_page(page_num){
     if ($(window).width() > 480) {
-        i=i+1;
+        page_num=parseInt(page_num/2)+3;
     }else{
-        i=i+3;
+        page_num=page_num+3;
     }
     var j;
-    for(j=0;j<i;j++){
+    for(j=0;j<page_num;j++){
         $('#book2').append('<div class="flip-card" ></div>');
     }
     $('.flip-card').append('<div class="flip-card-inner" ></div>');
@@ -15,8 +15,8 @@ function create_page(i){
     $('.flip-card-front').eq(0).append('<div id="credits" class="stickers"></div>');
     $('.flip-card-front').eq(0).append('<div id="resources" class="stickers"></div>');
     $('.flip-card-back').eq(0).attr('id','page_first');
-    $('.flip-card-front').eq($('.flip-card-front').length-1).attr('id','page_last');
-    $('.flip-card-back').eq($('.flip-card-back').length-1).attr('id','page_back_cover');
+	$('.flip-card-front').eq($('.flip-card-front').length-1).attr('id','page_last');
+	$('.flip-card-back').eq($('.flip-card-back').length-1).attr('id','page_back_cover');
 }
 
 function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3,stc1,stc2,CoverNum){
