@@ -56,7 +56,7 @@
 		padding-right: 1.2vw;
 		padding-top: 0.5vw;
 		padding-bottom: 1.5vw;
-		background-image: url("img/short_article_bg.png");
+		background-image: url("img/IQD-a-02.png");
 		background-size: cover;
 	}
 	.bg_long{
@@ -65,7 +65,7 @@
 		padding-right:1.2vw;
 		padding-top: 0.5vw;
 		padding-bottom: 1vw;
-		background-image: url("img/long_article_bg.png");
+		background-image: url("img/IQD-a-01.png");
 		background-size: cover;
 	}
 	.grid_text_short_type1{
@@ -158,7 +158,7 @@
 		padding-right: 4vw;
 		padding-top: 1.5vw;
 		padding-bottom: 4vw;
-		background-image: url("img/short_article_bg.png");
+		background-image: url("img/IQD-a-02.png");
 		background-size: cover;
 	}
 	.bg_long{
@@ -167,7 +167,7 @@
 		padding-right: 4vw;
 		padding-top: 1.5vw;
 		padding-bottom: 3vw;
-		background-image: url("img/long_article_bg.png");
+		background-image: url("img/IQD-a-01.png");
 		background-size: cover;
 	}
 	.grid_text_short_type1{
@@ -241,7 +241,7 @@
 
 .grid_block_type1{
 	position: relative;
-	box-shadow: -5px 2px 5px 0px #888888;
+	filter: drop-shadow(-5px 2px 2px #888888);
 }
 
 .grid_name_type1{
@@ -255,8 +255,8 @@
 }
 
 .grid_pic_1_1_type1{
-	max-width:83%;
-	padding-top: 6.53%
+	max-width:86%;
+	margin-top: 6.53%;
 }
 
 .grid_pic_4_3_type1{
@@ -410,13 +410,18 @@
 
 .grid_block_type2{
 	position: relative;
-	box-shadow: -5px 2px 5px 0px #888888;
+	filter: drop-shadow(-5px 2px 2px #888888);
 }
 
 .grid_name_type2{
 	font-size: 0.5rem;
+	font-family: Georgia;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	/* font-size: 0.5rem;
 	font-style: italic;
-	font-family: Verdana;
+	font-family: Verdana;*/
 	display: flex;
     justify-content: left;
 	flex-wrap: wrap;
@@ -424,8 +429,10 @@
 }
 
 .grid_pic_1_1_type2{
-	max-width:83%;
-	padding-top: 6.53%
+	max-width:86%;
+	margin-top: 6.53%;
+	object-fit: cover;
+	aspect-ratio: 1 / 1;
 }
 
 .grid_pic_4_3_type2{
@@ -572,9 +579,9 @@
 /************/
 .mask_pic_1_1{
 	position: absolute;
-	left: 8.5%;
-	top: 5.7%;
-	max-width:83%;
+	left: 8%;
+	top: 5.5%;
+	max-width:86%;
 }
 .mask_pic_4_3{
 	position: absolute;
@@ -587,11 +594,11 @@
 /*background_photo*/
 /************/
 .bg_pic_1_1{
-	background-image: url("img/photo_1x1_bg.png");
+	background-image: url("img/IQD-b-06.png");
 	background-size: cover;
 }
 .bg_pic_4_3{
-	background-image: url("img/photo_4x3_bg.png");
+	background-image: url("img/IQD-b-05.png");
 	background-size: cover;
 }
 

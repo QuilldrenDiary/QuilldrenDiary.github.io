@@ -35,7 +35,7 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	{
 		PIC1 = '<div class="grid_block_type1 pic1_L_type1 bg_pic_4_3">\
 					<img src="'+pic1+'" class="grid_pic_4_3_type1"></img>\
-					<img src="./img/mask_4x3.png" class="mask_pic_4_3"></img>\
+					<img src="./img/IQD-a40.png" class="mask_pic_4_3"></img>\
 				</div>\
 				<div class="grid_name_type1 name1_L_type1">'+name1+'</div>';
 		popup_photo(pic1, '.pic1_L_type1');
@@ -49,7 +49,7 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	{
 		PIC2 = '<div class="grid_block_type1 pic2_L_type1 bg_pic_1_1">\
 					<img src="'+pic2+'" class="grid_pic_1_1_type1"></img>\
-					<img src="./img/mask_1x1.png" class="mask_pic_1_1"></img>\
+					<img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>\
 				</div>\
 				<div class="grid_name_type1 name2_L_type1">'+name2+'</div>';
 		popup_photo(pic2, '.pic2_L_type1');
@@ -63,7 +63,7 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	{
 		PIC3 = '<div class="grid_block_type1 pic3_L_type1 bg_pic_1_1">\
 					<img src="'+pic3+'" class="grid_pic_1_1_type1"></img>\
-					<img src="./img/mask_1x1.png" class="mask_pic_1_1"></img>\
+					<img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>\
 				</div>\
 				<div class="grid_name_type1 name3_L_type1">'+name3+'</div>';
 		popup_photo(pic3, '.pic3_L_type1');
@@ -149,7 +149,7 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	{
 		PIC1 = '<div class="grid_block_type1 pic1_R_type1 bg_pic_1_1">\
                     <img src="'+pic1+'" class="grid_pic_1_1_type1"></img>\
-                    <img src="./img/mask_1x1.png" class="mask_pic_1_1"></img>\
+                    <img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>\
                 </div>\
 				<div class="grid_name_type1 name1_R_type1">'+name1+'</div>';
 		popup_photo(pic1, '.pic1_R_type1');
@@ -163,7 +163,7 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	{
 		PIC2 = '<div class="grid_block_type1 pic2_R_type1 bg_pic_1_1">\
                     <img src="'+pic2+'" class="grid_pic_1_1_type1"></img>\
-                    <img src="./img/mask_1x1.png" class="mask_pic_1_1"></img>\
+                    <img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>\
                 </div>\
 				<div class="grid_name_type1 name2_R_type1">'+name2+'</div>';
 		popup_photo(pic2, '.pic2_R_type1');
@@ -177,7 +177,7 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	{
 		PIC3 = '<div class="grid_block_type1 pic3_R_type1 bg_pic_4_3">\
                     <img src="'+pic3+'" class="grid_pic_4_3_type1"></img>\
-                    <img src="./img/mask_4x3.png" class="mask_pic_4_3"></img>\
+                    <img src="./img/IQD-a40.png" class="mask_pic_4_3"></img>\
                 </div>\
 				<div class="grid_name_type1 name3_R_type1">'+name3+'</div>';
 		popup_photo(pic3, '.pic3_R_type1');
@@ -259,12 +259,11 @@ function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	
 	if(CoverNum != 1)
 	{
-		PIC1 = '<div class="grid_block_type2 pic1_L_type2 bg_pic_4_3">\
-                    <img src="'+pic1+'" class="grid_pic_4_3_type2"></img>\
-                    <img src="./img/mask_4x3.png" class="mask_pic_4_3"></img>\
-                </div>\
-				<div class="grid_name_type2 name1_L_type2">'+name1+'</div>';
-		popup_photo(pic1, '.pic1_L_type2');
+		PIC1 = `<div id="L_type2_id_${i}_1" class="grid_block_type2 pic1_L_type2 bg_pic_4_3">
+                    <img src="./photo/travel/${pic1}" class="grid_pic_4_3_type2"></img>
+                    <img src="./img/IQD-a40.png" class="mask_pic_4_3"></img>
+                </div>
+				<div class="grid_name_type2 name1_L_type2">${name1}</div>`;
 	}
 	else
 	{
@@ -273,12 +272,11 @@ function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	
 	if(CoverNum != 2)
 	{
-		PIC2 = '<div class="grid_block_type2 pic2_L_type2 bg_pic_4_3">\
-                    <img src="'+pic2+'" class="grid_pic_4_3_type2"></img>\
-                    <img src="./img/mask_4x3.png" class="mask_pic_4_3"></img>\
-                </div>\
-				<div class="grid_name_type2 name2_L_type2">'+name2+'</div>';
-		popup_photo(pic2, '.pic2_L_type2');
+		PIC2 = `<div id="L_type2_id_${i}_2" class="grid_block_type2 pic2_L_type2 bg_pic_4_3">
+                    <img src="./photo/travel/${pic2}" class="grid_pic_4_3_type2"></img>
+                    <img src="./img/IQD-a40.png" class="mask_pic_4_3"></img>
+                </div>
+				<div class="grid_name_type2 name2_L_type2">${name2}</div>`;
 	}
 	else
 	{
@@ -287,12 +285,11 @@ function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	
 	if(CoverNum != 3)
 	{
-		PIC3 = '<div class="grid_block_type2 pic3_L_type2 bg_pic_4_3">\
-                    <img src="'+pic3+'" class="grid_pic_4_3_type2"></img>\
-                    <img src="./img/mask_4x3.png" class="mask_pic_4_3"></img>\
-                </div>\
-				<div class="grid_name_type2 name3_L_type2">'+name3+'</div>';
-		popup_photo(pic3, '.pic3_L_type2');
+		PIC3 = `<div id="L_type2_id_${i}_3" class="grid_block_type2 pic3_L_type2 bg_pic_4_3">
+                    <img src="./photo/travel/${pic3}" class="grid_pic_4_3_type2"></img>
+                    <img src="./img/IQD-a40.png" class="mask_pic_4_3"></img>
+                </div>
+				<div class="grid_name_type2 name3_L_type2">${name3}</div>`;
 	}
 	else
 	{
@@ -301,32 +298,30 @@ function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	
 	if(CoverNum != 4)
 	{
-		PIC4 = '<div class="grid_block_type2 pic4_L_type2 bg_pic_1_1">\
-                    <img src="'+pic4+'" class="grid_pic_1_1_type2"></img>\
-                    <img src="./img/mask_1x1.png" class="mask_pic_1_1"></img>\
-                </div>\
-				<div class="grid_name_type2 name4_L_type2">'+name4+'</div>';
-		popup_photo(pic4, '.pic4_L_type2');
+		PIC4 = `<div id="L_type2_id_${i}_4" class="grid_block_type2 pic4_L_type2 bg_pic_1_1">
+                    <img src="./photo/travel/${pic4}" class="grid_pic_1_1_type2"></img>
+                    <img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>
+                </div>
+				<div class="grid_name_type2 name4_L_type2">${name4}</div>`;
 	}
 	else
 	{
 		PIC4 = '<div class="pic4_L_type2"><img src="'+pic4+'" class="cover_stc"></img></div>';
 	}
-	
+
 	if(CoverNum != 5)
 	{
-		PIC5 = '<div class="grid_block_type2 pic5_L_type2 bg_pic_1_1">\
-                    <img src="'+pic5+'" class="grid_pic_1_1_type2"></img>\
-                    <img src="./img/mask_1x1.png" class="mask_pic_1_1"></img>\
-                </div>\
-				<div class="grid_name_type2 name5_L_type2">'+name5+'</div>';
-		popup_photo(pic5, '.pic5_L_type2');
+		PIC5 = `<div id="L_type2_id_${i}_5" class="grid_block_type2 pic5_L_type2 bg_pic_1_1">
+                    <img src="./photo/travel/${pic5}" class="grid_pic_1_1_type2"></img>
+                    <img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>
+                </div>
+				<div class="grid_name_type2 name5_L_type2">${name5}</div>`;
 	}
 	else
 	{
 		PIC5 = '<div class="pic5_L_type2"><img src="'+pic5+'" class="cover_stc"></img></div>';
 	}
-	
+
     $('.page').eq(i).append('\
         <div class="grid">\
             <div class="container_bookL_type2">'
@@ -334,6 +329,12 @@ function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
             '</div>\
         </div>\
     ');
+
+    popup_photo(`./photo/travel/${pic1}`, `#L_type2_id_${i}_1`);
+    popup_photo(`./photo/travel/${pic2}`, `#L_type2_id_${i}_2`);
+    popup_photo(`./photo/travel/${pic3}`, `#L_type2_id_${i}_3`);
+	popup_photo(`./photo/travel/${pic4}`, `#L_type2_id_${i}_4`);
+    popup_photo(`./photo/travel/${pic5}`, `#L_type2_id_${i}_5`);
 }
 function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,name5,CoverNum){
 
@@ -347,12 +348,11 @@ function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	
 	if(CoverNum != 1)
 	{
-		PIC1 = '<div class="grid_block_type2 pic1_R_type2 bg_pic_4_3">\
-                    <img src="'+pic1+'" class="grid_pic_4_3_type2"></img>\
-                    <img src="./img/mask_4x3.png" class="mask_pic_4_3"></img>\
-                </div>\
-				<div class="grid_name_type2 name1_R_type2">'+name1+'</div>';
-		popup_photo(pic1, '.pic1_R_type2');
+		PIC1 = `<div id="R_type2_id_${i}_1" class="grid_block_type2 pic1_R_type2 bg_pic_4_3">
+                    <img src="./photo/travel/${pic1}" class="grid_pic_4_3_type2"></img>
+                    <img src="./img/IQD-a40.png" class="mask_pic_4_3"></img>
+                </div>
+				<div class="grid_name_type2 name1_R_type2">${name1}</div>`;
 	}
 	else
 	{
@@ -361,12 +361,11 @@ function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	
 	if(CoverNum != 2)
 	{
-		PIC2 = '<div class="grid_block_type2 pic2_R_type2 bg_pic_4_3">\
-                    <img src="'+pic2+'" class="grid_pic_4_3_type2"></img>\
-                    <img src="./img/mask_4x3.png" class="mask_pic_4_3"></img>\
-                </div>\
-				<div class="grid_name_type2 name2_R_type2">'+name2+'</div>';
-		popup_photo(pic2, '.pic2_R_type2');
+		PIC2 = `<div id="R_type2_id_${i}_2" class="grid_block_type2 pic2_R_type2 bg_pic_4_3">
+                    <img src="./photo/travel/${pic2}" class="grid_pic_4_3_type2"></img>
+                    <img src="./img/IQD-a40.png" class="mask_pic_4_3"></img>
+                </div>
+				<div class="grid_name_type2 name2_R_type2">${name2}</div>`;
 	}
 	else
 	{
@@ -375,12 +374,11 @@ function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	
 	if(CoverNum != 3)
 	{
-		PIC3 = '<div class="grid_block_type2 pic3_R_type2 bg_pic_4_3">\
-                    <img src="'+pic3+'" class="grid_pic_4_3_type2"></img>\
-                    <img src="./img/mask_4x3.png" class="mask_pic_4_3"></img>\
-                </div>\
-				<div class="grid_name_type2 name3_R_type2">'+name3+'</div>';
-		popup_photo(pic3, '.pic3_R_type2');
+		PIC3 = `<div id="R_type2_id_${i}_3" class="grid_block_type2 pic3_R_type2 bg_pic_4_3">
+                    <img src="./photo/travel/${pic3}" class="grid_pic_4_3_type2"></img>
+                    <img src="./img/IQD-a40.png" class="mask_pic_4_3"></img>
+                </div>
+				<div class="grid_name_type2 name3_R_type2">${name3}</div>`;
 	}
 	else
 	{
@@ -389,12 +387,11 @@ function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	
 	if(CoverNum != 4)
 	{
-		PIC4 = '<div class="grid_block_type2 pic4_R_type2 bg_pic_1_1">\
-                    <img src="'+pic4+'" class="grid_pic_1_1_type2"></img>\
-                    <img src="./img/mask_1x1.png" class="mask_pic_1_1"></img>\
-                </div>\
-				<div class="grid_name_type2 name4_R_type2">'+name4+'</div>';
-		popup_photo(pic4, '.pic4_R_type2');
+		PIC4 = `<div id="R_type2_id_${i}_4" class="grid_block_type2 pic4_R_type2 bg_pic_1_1">
+                    <img src="./photo/travel/${pic4}" class="grid_pic_1_1_type2"></img>
+                    <img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>
+                </div>
+				<div class="grid_name_type2 name4_R_type2">${name4}</div>`;
 	}
 	else
 	{
@@ -403,12 +400,11 @@ function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	
 	if(CoverNum != 5)
 	{
-		PIC5 = '<div class="grid_block_type2 pic5_R_type2 bg_pic_1_1">\
-                    <img src="'+pic5+'" class="grid_pic_1_1_type2"></img>\
-                    <img src="./img/mask_1x1.png" class="mask_pic_1_1"></img>\
-                </div>\
-				<div class="grid_name_type2 name5_R_type2">'+name5+'</div>';
-		popup_photo(pic5, '.pic5_R_type2');
+		PIC5 = `<div id="R_type2_id_${i}_5" class="grid_block_type2 pic5_R_type2 bg_pic_1_1">
+                    <img src="./photo/travel/${pic5}" class="grid_pic_1_1_type2"></img>
+                    <img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>
+                </div>
+				<div class="grid_name_type2 name5_R_type2">${name5}</div>`;
 	}
 	else
 	{
@@ -422,6 +418,11 @@ function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
             '</div>\
         </div>\
     ');
+    popup_photo(`./photo/travel/${pic1}`, `#R_type2_id_${i}_1`);
+    popup_photo(`./photo/travel/${pic2}`, `#R_type2_id_${i}_2`);
+    popup_photo(`./photo/travel/${pic3}`, `#R_type2_id_${i}_3`);
+    popup_photo(`./photo/travel/${pic4}`, `#R_type2_id_${i}_4`);
+    popup_photo(`./photo/travel/${pic5}`, `#R_type2_id_${i}_5`);
 }
 function insert_last_page(i){
     if ($(window).width() > 480) {
