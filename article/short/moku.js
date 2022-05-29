@@ -1,0 +1,1 @@
+define([], function(){ return { Author: "moku@a3895956", Len: 0, Text: function(){ return "I really like Ike when singing, especially when the ニコニコ老人会 time, you look sparkling when chatting about your favorite music, hope you can continue to work hard and accomplish whatever you want to do, I will always support you. "}};});

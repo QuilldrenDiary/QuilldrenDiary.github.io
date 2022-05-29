@@ -1,0 +1,1 @@
+define([], function(){ return { Author: "inekiいねき@ineki_0z", Len: 0, Text: function(){ return "I love it when you were immersed in the stories, it helped us immerse and feel the same emotion.<br>Happy birthday Ike! Also wish you can always be a HAPPY FAN BOI!"}};});

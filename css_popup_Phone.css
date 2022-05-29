@@ -25,7 +25,7 @@
 		margin: 20px auto;
 		width: 81vw;
 		height: 108vw;
-		background: url(./img/article-popup-long-bg.png);
+		background: url(./img/IQD-b-04.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 		display: flex;
@@ -36,7 +36,7 @@
 		margin: 20px auto;
 		width: 81vw;
 		height: 81vw;
-		background: url(./img/article-popup-medium-bg.png);
+		background: url(./img/IQD-b-03.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 		display: flex;
@@ -46,9 +46,9 @@
 		flex: 1;
 		font-family: Georgia;
 		font-size: 0.7rem;
-		padding-left: 7vw;
-		padding-right: 7vw;
-		padding-top: 4vw;
+		padding-left: 10vw;
+		padding-right: 10vw;
+		padding-top: 9vw;
 		text-align:justify;
 		word-wrap: break-word;
 		-webkit-hyphens: auto;
@@ -58,6 +58,8 @@
 		overflow:hidden;
 	}
 	.popup-article-author {
+		/* color: #FDDA8E; */
+		color:#ffffff;
 		text-align: center;
 		font-family: Georgia;
 		font-size: 0.8rem;

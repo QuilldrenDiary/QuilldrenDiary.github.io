@@ -1,0 +1,1 @@
+define([], function(){ return { Author: "ツキTsuki", Len: 0, Text: function(){ return "Happy birthday, Ike!!! Thank you for coming to Nijisanji EN and letting me know that there is such a gentle and caring existence in this world!!"}};});

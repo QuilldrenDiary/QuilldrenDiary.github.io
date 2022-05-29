@@ -23,9 +23,9 @@
 	.popup-article-long-bg {
 		position: relative;
 		margin: 20px auto;
-		width: 48vh;
-		height: 64vh;
-		background: url(./img/article-popup-long-bg.png);
+		width: 60vh;
+		height: 80vh;
+		background: url(./img/IQD-b-04.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 		display: flex;
@@ -34,9 +34,9 @@
 	.popup-article-medium-bg {
 		position: relative;
 		margin: 20px auto;
-		width: 48vh;
-		height: 48vh;
-		background: url(./img/article-popup-medium-bg.png);
+		width: 60vh;
+		height: 60vh;
+		background: url(./img/IQD-b-03.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 		display: flex;
@@ -46,9 +46,9 @@
 		flex: 1;
 		font-family: Georgia;
 		font-size: 1.8vh;
-		padding-left: 5vh;
-		padding-right: 5vh;
-		padding-top: 2vh;
+		padding-left: 7vh;
+		padding-right: 7vh;
+		padding-top: 6vh;
 		text-align:justify;
 		word-wrap: break-word;
 		-webkit-hyphens: auto;
@@ -58,12 +58,14 @@
 		overflow:hidden;
 	}
 	.popup-article-author {
+		/* color: #FDDA8E; */
+		color: #ffffff;
 		text-align: center;
 		font-family: Georgia;
 		font-size: 1.8vh;
 		padding-left: 5vh;
 		padding-right: 5vh;
-		padding-bottom: 3vh;
+		padding-bottom: 5vh;
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		overflow: hidden;
