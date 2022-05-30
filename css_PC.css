@@ -46,6 +46,11 @@ body {
 	--unit: 1vw;
 }
 
+.stickers{
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+}
+
 @media (min-width: 480px){
 	.stickers:hover{
 		margin-top: calc(0.1 * var(--unit));
