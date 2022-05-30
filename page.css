@@ -253,9 +253,14 @@
 }
 
 .grid_name_type1{
-	font-size: 0.4em;
+	font-size: 0.5rem;
+	font-family: Georgia;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	/* font-size: 0.5rem;
 	font-style: italic;
-	font-family: Verdana;
+	font-family: Verdana;*/
 	display: flex;
     justify-content: left;
 	flex-wrap: wrap;

@@ -33,12 +33,11 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 1)
 	{
-		PIC1 = '<div class="grid_block_photo_type1 pic1_L_type1 bg_pic_4_3">\
-					<img src="'+pic1+'" class="grid_pic_4_3_type1"></img>\
-					<img src="./img/IQD-a40.png" class="mask_pic_4_3"></img>\
-				</div>\
-				<div class="grid_name_type1 name1_L_type1">'+name1+'</div>';
-		popup_photo(pic1, '.pic1_L_type1');
+		PIC1 = `<div class="grid_block_photo_type1 pic1_L_type1 bg_pic_4_3">
+					<img src="./photo/travel/${pic1}" class="grid_pic_4_3_type1"></img>
+					<img src="./img/IQD-a40.png" class="mask_pic_4_3"></img>
+				</div>
+				<div class="grid_name_type1 name1_L_type1">${name1}</div>`;
 	}
 	else
 	{
@@ -47,12 +46,11 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 2)
 	{
-		PIC2 = '<div class="grid_block_photo_type1 pic2_L_type1 bg_pic_1_1">\
-					<img src="'+pic2+'" class="grid_pic_1_1_type1"></img>\
-					<img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>\
-				</div>\
-				<div class="grid_name_type1 name2_L_type1">'+name2+'</div>';
-		popup_photo(pic2, '.pic2_L_type1');
+		PIC2 = `<div class="grid_block_photo_type1 pic2_L_type1 bg_pic_1_1">
+					<img src="./photo/dailylife/${pic2}" class="grid_pic_1_1_type1"></img>
+					<img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>
+				</div>
+				<div class="grid_name_type1 name2_L_type1">${name2}</div>`;
 	}
 	else
 	{
@@ -61,12 +59,11 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 3)
 	{
-		PIC3 = '<div class="grid_block_photo_type1 pic3_L_type1 bg_pic_1_1">\
-					<img src="'+pic3+'" class="grid_pic_1_1_type1"></img>\
-					<img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>\
-				</div>\
-				<div class="grid_name_type1 name3_L_type1">'+name3+'</div>';
-		popup_photo(pic3, '.pic3_L_type1');
+		PIC3 = `<div class="grid_block_photo_type1 pic3_L_type1 bg_pic_1_1">
+					<img src="./photo/dailylife/${pic3}" class="grid_pic_1_1_type1"></img>
+					<img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>
+				</div>
+				<div class="grid_name_type1 name3_L_type1">${name3}</div>`;
 	}
 	else
 	{
@@ -75,50 +72,36 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 4)
 	{
-		TEXT1 = '<div lang="en" class="grid_block_article_type1 text1_L_type1 bg_short">\
-					<div id="'+text1_author+'" class="grid_author_short_type1"></div>\
-					<div id="'+text1_id+'" class="grid_text_short_type1"></div>\
-				</div>\
-				<img src="'+stc1+'" class="grid_stc_pic_type1 stc1_L_type1"></img>';
-		requirejs([text1], function(text1) {
-			document.getElementById(text1_id).innerHTML = text1.Text();
-			document.getElementById(text1_author).innerHTML = text1.Author;
-		});
-		popup_article(text1, '.stc1_L_type1');
+		TEXT1 = `<div lang="en" class="grid_block_article_type1 text1_L_type1 bg_short">
+					<div id="${text1_author}" class="grid_author_short_type1"></div>
+					<div id="${text1_id}" class="grid_text_short_type1"></div>
+				</div>
+				<img id="L_type1_stc_${i}_4" src="./photo/sticker/${stc1}" class="grid_stc_pic_type1 stc1_L_type1"></img>`;
 	}
 	else
 	{
 		TEXT1 = '<div class="text1_L_type1"><img src="'+text1+'" class="cover_stc"></img></div>';
 	}
-	
+
 	if(CoverNum != 5)
 	{
-		TEXT2 = '<div lang="en" class="grid_block_article_type1 text2_L_type1 bg_long">\
-					<div id="'+text2_id+'" class="grid_text_long_type1"></div>\
-					<div id="'+text2_author+'" class="grid_author_long_type1"></div>\
-				</div>';
-		requirejs([text2], function(text2) {
-			document.getElementById(text2_id).innerHTML = text2.Text();
-			document.getElementById(text2_author).innerHTML = text2.Author;
-		});
+		TEXT2 = `<div lang="en" class="grid_block_article_type1 text2_L_type1 bg_long">
+					<div id="${text2_id}" class="grid_text_long_type1"></div>
+					<div id="${text2_author}" class="grid_author_long_type1"></div>
+				</div>`;
 	}
 	else
 	{
 		TEXT2 = '<div class="text2_L_type1"><img src="'+text2+'" class="cover_stc"></img></div>';
 	}
-	
+
 	if(CoverNum != 6)
 	{
-		TEXT3 = '<div lang="en" class="grid_block_article_type1 text3_L_type1 bg_short">\
-					<div id="'+text3_author+'" class="grid_author_short_type1"></div>\
-					<div id="'+text3_id+'" class="grid_text_short_type1"></div>\
-				</div>\
-				<img src="'+stc2+'" class="grid_stc_pic_type1 stc2_L_type1"></img>';
-		requirejs([text3], function(text3) {
-			document.getElementById(text3_id).innerHTML = text3.Text();
-			document.getElementById(text3_author).innerHTML = text3.Author;
-		});
-		popup_article(text3, '.stc2_L_type1');
+		TEXT3 = `<div lang="en" class="grid_block_article_type1 text3_L_type1 bg_short">
+					<div id=${text3_author} class="grid_author_short_type1"></div>
+					<div id=${text3_id} class="grid_text_short_type1"></div>
+				</div>
+				<img id="L_type1_stc_${i}_6" src="./photo/sticker/${stc2}" class="grid_stc_pic_type1 stc2_L_type1"></img>`;
 	}
 	else
 	{
@@ -132,6 +115,34 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
             '</div>\
         </div>\
     ');
+
+	if(CoverNum != 1) popup_photo(`./photo/travel/${pic1}`, '.pic1_L_type1');
+	if(CoverNum != 2) popup_photo(`./photo/dailylife/${pic2}`, '.pic2_L_type1');
+	if(CoverNum != 3) popup_photo(`./photo/dailylife/${pic3}`, '.pic3_L_type1');
+	if(CoverNum != 4){
+		text1 = "./article/long/"+text1;
+		requirejs([text1], function(text1) {
+			console.log("text1", text1);
+			document.getElementById(text1_id).innerHTML = text1.Text();
+			document.getElementById(text1_author).innerHTML = text1.Author;
+		});
+		popup_article(text1, `#L_type1_stc_${i}_4`);
+	}
+	if(CoverNum != 5){
+		text2 = "./article/short/"+text2;
+		requirejs([text2], function(text2) {
+			document.getElementById(text2_id).innerHTML = text2.Text();
+			document.getElementById(text2_author).innerHTML = text2.Author;
+		});
+	}
+	if(CoverNum != 6){
+		text3 = "./article/long/"+text3;
+		requirejs([text3], function(text3) {
+			document.getElementById(text3_id).innerHTML = text3.Text();
+			document.getElementById(text3_author).innerHTML = text3.Author;
+		});
+		popup_article(text3, `#L_type1_stc_${i}_6`);
+	}
 }
 function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3,stc1,stc2,CoverNum){
 
@@ -147,12 +158,11 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 1)
 	{
-		PIC1 = '<div class="grid_block_photo_type1 pic1_R_type1 bg_pic_1_1">\
-                    <img src="'+pic1+'" class="grid_pic_1_1_type1"></img>\
-                    <img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>\
-                </div>\
-				<div class="grid_name_type1 name1_R_type1">'+name1+'</div>';
-		popup_photo(pic1, '.pic1_R_type1');
+		PIC1 = `<div class="grid_block_photo_type1 pic1_R_type1 bg_pic_1_1">
+                    <img src="./photo/dailylife/${pic1}" class="grid_pic_1_1_type1"></img>
+                    <img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>
+                </div>
+				<div class="grid_name_type1 name1_R_type1">${name1}</div>`;
 	}
 	else
 	{
@@ -161,12 +171,11 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 2)
 	{
-		PIC2 = '<div class="grid_block_photo_type1 pic2_R_type1 bg_pic_1_1">\
-                    <img src="'+pic2+'" class="grid_pic_1_1_type1"></img>\
-                    <img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>\
-                </div>\
-				<div class="grid_name_type1 name2_R_type1">'+name2+'</div>';
-		popup_photo(pic2, '.pic2_R_type1');
+		PIC2 = `<div class="grid_block_photo_type1 pic2_R_type1 bg_pic_1_1">
+                    <img src="./photo/dailylife/${pic2}" class="grid_pic_1_1_type1"></img>
+                    <img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>
+                </div>
+				<div class="grid_name_type1 name2_R_type1">${name2}</div>`;
 	}
 	else
 	{
@@ -175,12 +184,11 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 3)
 	{
-		PIC3 = '<div class="grid_block_photo_type1 pic3_R_type1 bg_pic_4_3">\
-                    <img src="'+pic3+'" class="grid_pic_4_3_type1"></img>\
-                    <img src="./img/IQD-a40.png" class="mask_pic_4_3"></img>\
-                </div>\
-				<div class="grid_name_type1 name3_R_type1">'+name3+'</div>';
-		popup_photo(pic3, '.pic3_R_type1');
+		PIC3 = `<div class="grid_block_photo_type1 pic3_R_type1 bg_pic_4_3">
+                    <img src="./photo/travel/${pic3}" class="grid_pic_4_3_type1"></img>
+                    <img src="./img/IQD-a40.png" class="mask_pic_4_3"></img>
+                </div>
+				<div class="grid_name_type1 name3_R_type1">${name3}</div>`;
 	}
 	else
 	{
@@ -189,14 +197,10 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 4)
 	{
-		TEXT1 = '<div lang="en" class="grid_block_article_type1 text1_R_type1 bg_long">\
-                    <div id="'+text1_id+'" class="grid_text_long_type1"></div>\
-                    <div id="'+text1_author+'" class="grid_author_long_type1"></div>\
-                </div>';
-		requirejs([text1], function(text1) {
-			document.getElementById(text1_id).innerHTML = text1.Text();
-			document.getElementById(text1_author).innerHTML = text1.Author;
-		});
+		TEXT1 = `<div lang="en" class="grid_block_article_type1 text1_R_type1 bg_long">
+                    <div id="${text1_id}" class="grid_text_long_type1"></div>
+                    <div id="${text1_author}" class="grid_author_long_type1"></div>
+                </div>`;
 	}
 	else
 	{
@@ -205,16 +209,11 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 5)
 	{
-		TEXT2 = '<div lang="en" class="grid_block_article_type1 text2_R_type1 bg_short">\
-                    <div id="'+text2_author+'" class="grid_author_short_type1"></div>\
-                    <div id="'+text2_id+'" class="grid_text_short_type1"></div>\
-                </div>\
-				<img src="'+stc1+'" class="grid_stc_pic_type1 stc1_R_type1"></img>';
-		requirejs([text2], function(text2) {
-			document.getElementById(text2_id).innerHTML = text2.Text();
-			document.getElementById(text2_author).innerHTML = text2.Author;
-		});
-		popup_article(text2, '.stc1_R_type1');
+		TEXT2 = `<div lang="en" class="grid_block_article_type1 text2_R_type1 bg_short">
+                    <div id="${text2_author}" class="grid_author_short_type1"></div>
+                    <div id="${text2_id}" class="grid_text_short_type1"></div>
+                </div>
+				<img id="R_type1_stc_${i}_5" src="./photo/sticker/${stc1}" class="grid_stc_pic_type1 stc1_R_type1"></img>`;
 	}
 	else
 	{
@@ -223,16 +222,11 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 6)
 	{
-		TEXT3 = '<div lang="en" class="grid_block_article_type1 text3_R_type1 bg_short">\
-                    <div id="'+text3_author+'" class="grid_author_short_type1"></div>\
-                    <div id="'+text3_id+'" class="grid_text_short_type1"></div>\
-                </div>\
-                <img src="'+stc2+'" class="grid_stc_pic_type1 stc2_R_type1"></img>';
-		requirejs([text3], function(text3) {
-			document.getElementById(text3_id).innerHTML = text3.Text();
-			document.getElementById(text3_author).innerHTML = text3.Author;
-		});
-		popup_article(text3, '.stc2_R_type1');
+		TEXT3 = `<div lang="en" class="grid_block_article_type1 text3_R_type1 bg_short">
+                    <div id="${text3_author}" class="grid_author_short_type1"></div>
+                    <div id="${text3_id}" class="grid_text_short_type1"></div>
+                </div>
+                <img id="R_type1_stc_${i}_6" src="./photo/sticker/${stc2}" class="grid_stc_pic_type1 stc2_R_type1"></img>`;
 	}
 	else
 	{
@@ -246,6 +240,34 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
             '</div>\
         </div>\
     ');
+
+	if(CoverNum != 1) popup_photo(`./photo/dailylife/${pic1}`, '.pic1_R_type1');
+	if(CoverNum != 2) popup_photo(`./photo/dailylife/${pic2}`, '.pic2_R_type1');
+	if(CoverNum != 3) popup_photo(`./photo/travel/${pic3}`, '.pic3_R_type1');
+	if(CoverNum != 4){
+		text1 = "./article/short/"+text1;
+		requirejs([text1], function(text1) {
+			console.log("text1", text1);
+			document.getElementById(text1_id).innerHTML = text1.Text();
+			document.getElementById(text1_author).innerHTML = text1.Author;
+		});
+	}
+	if(CoverNum != 5){
+		text2 = "./article/long/"+text2;
+		requirejs([text2], function(text2) {
+			document.getElementById(text2_id).innerHTML = text2.Text();
+			document.getElementById(text2_author).innerHTML = text2.Author;
+		});
+		popup_article(text2, `#R_type1_stc_${i}_5`);
+	}
+	if(CoverNum != 6){
+		text3 = "./article/long/"+text3;
+		requirejs([text3], function(text3) {
+			document.getElementById(text3_id).innerHTML = text3.Text();
+			document.getElementById(text3_author).innerHTML = text3.Author;
+		});
+		popup_article(text3, `#R_type1_stc_${i}_6`);
+	}
 }
 function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,name5,CoverNum){
 
