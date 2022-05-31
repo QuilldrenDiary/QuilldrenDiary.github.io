@@ -41,7 +41,7 @@
 		z-index:2;
 	}
 	#pen2{
-		width:calc(14.6 * var(--unit));
+		width: calc(23 * var(--unit));
 		height:calc(82.2 * var(--unit));
 		background-image:url("img/Pen.png");
 		background-size: cover;

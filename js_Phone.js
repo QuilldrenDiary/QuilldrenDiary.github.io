@@ -73,7 +73,7 @@ function initialize_phone(){
 	$('#pen2').css("transition", "0.5s"); 
 	$('#pen2').css("background-image", "url('img/Pen.png')"); 
 	$('#pen2').css("transform", "rotate(26deg)"); 
-	$('#pen2').css("width", "calc(14.6 * var(--unit))"); 
+	$('#pen2').css("width", "calc(23 * var(--unit))"); 
 	$('#pen2').css("height", "calc(82.2 * var(--unit))"); 
 
 	setTimeout(
