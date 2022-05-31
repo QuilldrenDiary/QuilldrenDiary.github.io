@@ -55,7 +55,7 @@ function initialize_PC(){
 	$('#book').click(change_scene_PC);
 	
 	$('#pen').css("transition", "0.5s"); 
-	$('#pen').css("transform", "translate(calc(0.75 * var(--unit)),calc(14 * var(--unit)))"); 
+	$('#pen').css("transform", "translate(calc(-2.6 * var(--unit)),calc(13.5 * var(--unit)))"); 
 	$('#pen2').css("transition", "0.5s"); 
 	$('#pen2').css("transform", "rotate(24.03deg)"); 
 	
@@ -112,7 +112,7 @@ function change_scene_PC(){
 	$('#book').append('<div id="book-bg"></div>'); 
 	
 	$('#pen').css("transition", "0.5s"); 
-	$('#pen').css("transform", "translate(calc(90 * var(--unit)),calc(36 * var(--unit))) scale(60%)"); 
+	$('#pen').css("transform", "translate(calc(87.2 * var(--unit)),calc(36.3 * var(--unit))) scale(60%)"); 
 	$('#pen2').css("transition", "0.5s"); 
 	$('#pen2').css("transform", "rotate(-20deg)"); 
 	
