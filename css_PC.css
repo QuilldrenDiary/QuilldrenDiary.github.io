@@ -106,15 +106,15 @@ body {
 		transform: rotate(-13deg);
 	}
 	#pen{
-		transform:translate(calc(0.75 * var(--unit)),calc(14 * var(--unit)));
+		transform:translate(calc(-2.6 * var(--unit)),calc(13.5 * var(--unit)));
 		position: absolute;
 		top: var(--offsetY); left: var(--offsetX);
 		z-index:2;
 	}
 	#pen2{
-		width:calc(5.4 * var(--unit));
-		height:calc(30.44 * var(--unit));
-		background-image:url("img/Pen.png");
+		width: calc(9 * var(--unit));
+		height: calc(30.44 * var(--unit));
+		background-image: url("img/Pen.png");
 		background-size: cover;
 		transform: rotate(24.03deg);
 		}
