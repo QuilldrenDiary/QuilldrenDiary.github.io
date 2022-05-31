@@ -33,7 +33,7 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 1)
 	{
-		PIC1 = `<div class="grid_block_photo_type1 pic1_L_type1 bg_pic_4_3">
+		PIC1 = `<div id="L_type1_id_${i}_1" class="grid_block_photo_type1 pic1_L_type1 bg_pic_4_3">
 					<img src="./photo/travel/${pic1}" class="grid_pic_4_3_type1"></img>
 					<img src="./img/IQD-a40.png" class="mask_pic_4_3"></img>
 				</div>
@@ -46,7 +46,7 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 2)
 	{
-		PIC2 = `<div class="grid_block_photo_type1 pic2_L_type1 bg_pic_1_1">
+		PIC2 = `<div id="L_type1_id_${i}_2" class="grid_block_photo_type1 pic2_L_type1 bg_pic_1_1">
 					<img src="./photo/dailylife/${pic2}" class="grid_pic_1_1_type1"></img>
 					<img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>
 				</div>
@@ -59,7 +59,7 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 3)
 	{
-		PIC3 = `<div class="grid_block_photo_type1 pic3_L_type1 bg_pic_1_1">
+		PIC3 = `<div id="L_type1_id_${i}_3" class="grid_block_photo_type1 pic3_L_type1 bg_pic_1_1">
 					<img src="./photo/dailylife/${pic3}" class="grid_pic_1_1_type1"></img>
 					<img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>
 				</div>
@@ -116,9 +116,9 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
         </div>\
     ');
 
-	if(CoverNum != 1) popup_photo(`./photo/travel/${pic1}`, '.pic1_L_type1');
-	if(CoverNum != 2) popup_photo(`./photo/dailylife/${pic2}`, '.pic2_L_type1');
-	if(CoverNum != 3) popup_photo(`./photo/dailylife/${pic3}`, '.pic3_L_type1');
+	if(CoverNum != 1) popup_photo(`./photo/travel/${pic1}`, `#L_type1_id_${i}_1`);
+	if(CoverNum != 2) popup_photo(`./photo/dailylife/${pic2}`, `#L_type1_id_${i}_2`);
+	if(CoverNum != 3) popup_photo(`./photo/dailylife/${pic3}`, `#L_type1_id_${i}_3`);
 	if(CoverNum != 4){
 		text1 = "./article/long/"+text1;
 		requirejs([text1], function(text1) {
@@ -158,7 +158,7 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 1)
 	{
-		PIC1 = `<div class="grid_block_photo_type1 pic1_R_type1 bg_pic_1_1">
+		PIC1 = `<div id="R_type1_id_${i}_1" class="grid_block_photo_type1 pic1_R_type1 bg_pic_1_1">
                     <img src="./photo/dailylife/${pic1}" class="grid_pic_1_1_type1"></img>
                     <img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>
                 </div>
@@ -171,7 +171,7 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 2)
 	{
-		PIC2 = `<div class="grid_block_photo_type1 pic2_R_type1 bg_pic_1_1">
+		PIC2 = `<div id="R_type1_id_${i}_2" class="grid_block_photo_type1 pic2_R_type1 bg_pic_1_1">
                     <img src="./photo/dailylife/${pic2}" class="grid_pic_1_1_type1"></img>
                     <img src="./img/IQD-b40.png" class="mask_pic_1_1"></img>
                 </div>
@@ -184,7 +184,7 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	
 	if(CoverNum != 3)
 	{
-		PIC3 = `<div class="grid_block_photo_type1 pic3_R_type1 bg_pic_4_3">
+		PIC3 = `<div id="R_type1_id_${i}_3" class="grid_block_photo_type1 pic3_R_type1 bg_pic_4_3">
                     <img src="./photo/travel/${pic3}" class="grid_pic_4_3_type1"></img>
                     <img src="./img/IQD-a40.png" class="mask_pic_4_3"></img>
                 </div>
@@ -241,9 +241,9 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
         </div>\
     ');
 
-	if(CoverNum != 1) popup_photo(`./photo/dailylife/${pic1}`, '.pic1_R_type1');
-	if(CoverNum != 2) popup_photo(`./photo/dailylife/${pic2}`, '.pic2_R_type1');
-	if(CoverNum != 3) popup_photo(`./photo/travel/${pic3}`, '.pic3_R_type1');
+	if(CoverNum != 1) popup_photo(`./photo/dailylife/${pic1}`, `#R_type1_id_${i}_1`);
+	if(CoverNum != 2) popup_photo(`./photo/dailylife/${pic2}`, `#R_type1_id_${i}_2`);
+	if(CoverNum != 3) popup_photo(`./photo/travel/${pic3}`, `#R_type1_id_${i}_3`);
 	if(CoverNum != 4){
 		text1 = "./article/short/"+text1;
 		requirejs([text1], function(text1) {
