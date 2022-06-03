@@ -1,5 +1,5 @@
 #title_page{
-	background-image:url('img/page-title.png');
+	background-image:url('img/page-title.webp');
 	background-size: cover;
 	margin-top:1%; 
 	height:97%; 
@@ -7,7 +7,7 @@
 }
 @media (min-width: 480px){
 	#end_paper{
-		background-image: url(img/end-paper.png);
+		background-image: url(img/end-paper.webp);
 		background-size: cover;
 		margin-top: 41%;
 		margin-left: 22%;
@@ -56,7 +56,7 @@
 		padding-right: 1.2vw;
 		padding-top: 0.5vw;
 		padding-bottom: 1.5vw;
-		background-image: url("img/IQD-a-02.png");
+		background-image: url("img/IQD-a-02.webp");
 		background-size: cover;
 	}
 	.bg_long{
@@ -65,7 +65,7 @@
 		padding-right:1.2vw;
 		padding-top: 0.5vw;
 		padding-bottom: 1.2vw;
-		background-image: url("img/IQD-a-01.png");
+		background-image: url("img/IQD-a-01.webp");
 		background-size: cover;
 	}
 	.grid_text_short_type1{
@@ -109,7 +109,7 @@
 	}
 }@media (max-width: 480px){
 	#end_paper{
-		background-image: url(img/end-paper.png);
+		background-image: url(img/end-paper.webp);
 		background-size: cover;
 		margin-top: 41%;
 		margin-left: 22%;
@@ -158,7 +158,7 @@
 		padding-right: 4vw;
 		padding-top: 1.5vw;
 		padding-bottom: 4vw;
-		background-image: url("img/IQD-a-02.png");
+		background-image: url("img/IQD-a-02.webp");
 		background-size: cover;
 	}
 	.bg_long{
@@ -167,7 +167,7 @@
 		padding-right: 4vw;
 		padding-top: 1.5vw;
 		padding-bottom: 3vw;
-		background-image: url("img/IQD-a-01.png");
+		background-image: url("img/IQD-a-01.webp");
 		background-size: cover;
 	}
 	.grid_text_short_type1{
@@ -617,11 +617,11 @@
 /*background_photo*/
 /************/
 .bg_pic_1_1{
-	background-image: url("img/IQD-b-06.png");
+	background-image: url("img/IQD-b-06.webp");
 	background-size: cover;
 }
 .bg_pic_4_3{
-	background-image: url("img/IQD-b-05.png");
+	background-image: url("img/IQD-b-05.webp");
 	background-size: cover;
 }
 

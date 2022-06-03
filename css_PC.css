@@ -28,12 +28,12 @@
 	left: 40vw;
 	width: 20vw;
 	height: 20vw;
-	background-image: url("img/Quildren-1.gif");
+	background-image: url("img/Quildren-1.webp");
 	background-size: cover;
 	opacity:1;
 }
 body {
-	background-image:url("img/Table.png");
+	background-image:url("img/Table.webp");
 	background-size: cover;
 	overflow-y: hidden;
 	overflow-x: hidden;
@@ -68,7 +68,7 @@ body {
 		left: calc(17 * var(--unit));
 		width: calc(12 * var(--unit));
 		height: calc(7.33 * var(--unit));
-		background-image: url(img/credits.png);
+		background-image: url(img/credits.webp);
 		background-size: cover;
 		z-index: 100;
 	}
@@ -78,30 +78,32 @@ body {
 		left: calc(17 * var(--unit));
 		width: calc(12 * var(--unit));
 		height: calc(7.33 * var(--unit));
-		background-image: url(img/resources.png);
+		background-image: url(img/resources.webp);
 		background-size: cover;
 		z-index: 100;
 	}
 	#ink {
 		width:calc(20 * var(--unit));
 		height:calc(20 * var(--unit));
-		background-image:url("img/Ink.png");
+		background-image:url("img/Ink.webp");
 		background-size: cover;
 		transform: translate(calc(-1.23 * var(--unit)),calc(-5.357 * var(--unit))) rotate(90deg);
 		position: absolute;
 		top: var(--offsetY); left: var(--offsetX);
 		z-index:7;
+		transition: opacity 0.5s;
 	}
 	#twitter{
 		transform: translate(calc(0 * var(--unit)),calc(39 * var(--unit)));
 		position: absolute;
 		top: var(--offsetY); left: var(--offsetX);
 		z-index:1;
+		transition: opacity 0.5s, transform 0.5s;
 	}
 	#twitter2{
 		width:calc(20 * var(--unit));  
 		height:calc(17.04 * var(--unit));  
-		background-image:url("img/Twitter.png");
+		background-image:url("img/Twitter.webp");
 		background-size: cover;
 		transform: rotate(-13deg);
 	}
@@ -110,11 +112,12 @@ body {
 		position: absolute;
 		top: var(--offsetY); left: var(--offsetX);
 		z-index:2;
+		transition: opacity 0.5s, transform 0.5s;
 	}
 	#pen2{
 		width: calc(9 * var(--unit));
 		height: calc(30.44 * var(--unit));
-		background-image: url("img/Pen.png");
+		background-image: url("img/Pen.webp");
 		background-size: cover;
 		transform: rotate(24.03deg);
 		}
@@ -123,32 +126,34 @@ body {
 		position: absolute;
 		top: var(--offsetY); left: var(--offsetX);
 		z-index:5;
+		transition: transform 0.5s;
 	}
 	#book2{
 		width:calc(36.7 * var(--unit)); 
 		height:calc(44.57 * var(--unit));
-		background-image: url("img/book.png");
+		background-image: url("img/book.webp");
 		background-size: cover;
 		position: absolute;
 		transform: rotate(-4.81deg);
 		z-index: 2;
+		transition: transform 0.5s;
 	}
 	#book-bg {
 		width: calc(63.6 * var(--unit));
 		height: calc(43.4 * var(--unit));
-		background-image: url("img/book-bgR.png");
+		background-image: url("img/book-bgR.webp");
 		background-size: cover;
 		position: absolute;
 		top: calc(2.6 * var(--unit));
 		left: calc(-27.2 * var(--unit));
-		transform: rotate(-4.81deg);
 		opacity: 0;
 		z-index: 1;
+		transition: transform 0.5s;
 	}
 	#earringsL{
 		width:calc(6 * var(--unit)); 
 		height:calc(6 * var(--unit));
-		background-image:url("img/earringsL.png");
+		background-image:url("img/earringsL.webp");
 		background-size: cover;
 		position: absolute;
 		top: var(--offsetY); left: var(--offsetX);
@@ -156,11 +161,12 @@ body {
 		opacity:0;
 		z-index:1;
 		filter: drop-shadow(0 0 0.3vw black);
+		transition: opacity 0.5s;
 	}
 	#earringsR{
 		width:calc(6 * var(--unit)); 
 		height:calc(6 * var(--unit));
-		background-image:url("img/earringsR.png");
+		background-image:url("img/earringsR.webp");
 		background-size: cover;
 		position: absolute;
 		top: var(--offsetY); left: var(--offsetX);
@@ -168,6 +174,7 @@ body {
 		opacity:0;
 		z-index:1;
 		filter: drop-shadow(0 0 0.3vw black);
+		transition: opacity 0.5s;
 	}
 	
 	#pad{
@@ -175,41 +182,45 @@ body {
 		position: absolute;
 		top: var(--offsetY); left: var(--offsetX);
 		z-index:6;
+		transition: opacity 0.5s, transform 0.5s;
 	}
 	#pad2{
 		width:calc(33.43 * var(--unit));
 		height:calc(26.5 * var(--unit));
-		background-image:url("img/Pad.png");
+		background-image:url("img/Pad.webp");
 		background-size: cover;
 		transform: rotate(8deg);
 	}
 	#quilldren{
 		width:calc(22 * var(--unit));
 		height:calc(22 * var(--unit));
-		background-image:url("img/Quildren-2.gif");
+		background-image:url("img/Quildren-2.webp");
 		background-size: cover;
 		transform: translate(calc(45 * var(--unit)),calc(1 * var(--unit)));
 		position: absolute;
 		top: var(--offsetY); left: var(--offsetX);
 		z-index:3;
+		transition: opacity 0.5s, transform 0.5s;
 	}
 	#cup{
 		width:calc(24 * var(--unit));
 		height:calc(24 * var(--unit));
-		background-image:url("img/Cup.gif");
+		background-image:url("img/Cup.webp");
 		background-size: cover;
 		transform: translate(calc(82 * var(--unit)),calc(40 * var(--unit))) rotate(-68.99deg);
 		position: absolute;
 		top: var(--offsetY); left: var(--offsetX);
+		transition: opacity 0.5s;
 	}
 	#toast{
 		width:calc(49 * var(--unit));
 		height:calc(49 * var(--unit));
-		background-image:url("img/Toast.png");
+		background-image:url("img/Toast.webp");
 		background-size: cover;
 		transform: translate(calc(68 * var(--unit)),calc(-20 * var(--unit)));
 		position: absolute;
 		top: var(--offsetY); left: var(--offsetX);
+		transition: opacity 0.5s;
 
 	}
 	
@@ -241,33 +252,34 @@ body {
 	height: 100%;
 	-webkit-backface-visibility: hidden; /* Safari */
 	backface-visibility: hidden;
+	overflow: hidden;
 }
 
 .flip-card-front {
-	background-image: url("img/page-even.png");
+	background-image: url("img/page-even.webp");
 	background-size: cover;
 }
 
 .flip-card-back {
-	background-image: url("img/page-odd.png");
+	background-image: url("img/page-odd.webp");
 	background-size: cover;
 	transform: rotateY(180deg);
 }
 
 #page_first{
-	background-image: url("img/page-first.png");
+	background-image: url("img/page-first.webp");
 	background-size: cover;
 }
 #page_last{
-	background-image: url("img/page-last.png");
+	background-image: url("img/page-last.webp");
 	background-size: cover;
 }
 #page_back_cover{
-	background-image: url("img/page-back-cover.gif");
+	background-image: url("img/page-back-cover.webp");
 	background-size: cover;
 }
 #page_cover{
-	background-image: url("img/Cover.png");
+	background-image: url("img/Cover.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
