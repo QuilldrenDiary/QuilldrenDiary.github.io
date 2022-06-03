@@ -17,6 +17,11 @@ function create_page(page_num){
     $('.flip-card-back').eq(0).attr('id','page_first');
 	$('.flip-card-front').eq($('.flip-card-front').length-1).attr('id','page_last');
 	$('.flip-card-back').eq($('.flip-card-back').length-1).attr('id','page_back_cover');
+
+	/* 手機版把兩頁後先隱藏 */
+	if ($(window).width() <= 480) {
+		$('.flip-card').slice(2).css('display', 'none');
+	}
 }
 
 function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3,stc1,stc2,CoverNum){

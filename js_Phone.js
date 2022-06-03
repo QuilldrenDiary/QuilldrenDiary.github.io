@@ -53,6 +53,9 @@ function change_scene_phone() {
 }
 
 function first_page_phone() {
+    /* 跳到第一頁，取消隱藏第二頁 */
+	$(".flip-card").eq(2).css("display", "block");
+
     i = 1, $("#earringsL").css("opacity", "1"), $("#earringsR").css("opacity", "1"), 
     $("#earringsL").click(previous_phone), $("#earringsR").click(next_phone), $(".flip-card-inner").eq(0).css("transform", "rotateY(-180deg)"), 
     $(".flip-card").eq(1).css("z-index", "4"), $("#book").unbind("click"), setTimeout(function() {
@@ -61,6 +64,23 @@ function first_page_phone() {
 }
 
 function next_phone() {
+    if(i == 0){
+		/* 跳到第一頁，取消隱藏第二頁 */
+		$(".flip-card").eq(2).css("display", "block");
+    }else if(i < $(".flip-card-inner").length -1){
+		/* 跳到第i+1頁，取消隱藏第i+2頁，隱藏第i-1頁 (不隱藏0,1) */
+		if (i < $(".flip-card-inner").length - 2) {
+			$(".flip-card").eq(i+2).css("display", "block");
+		}
+		if (i-1 > 1) {
+			$(".flip-card").eq(i-1).css("display", "none");
+		}
+    }else if(i == $(".flip-card-inner").length -1){
+		if (i-1 > 1) {
+			$(".flip-card").eq(i-1).css("display", "none");
+		}
+    }
+
     $("#earringsR").unbind("click"), 0 == i ? ($(".flip-card-inner").eq(0).css("transform", "rotateY(-180deg)"), 
     $(".flip-card").eq(1).css("z-index", "3"), $("#earringsL").css("opacity", "1"), 
     $("#earringsR").css("opacity", "1"), setTimeout(function() {
@@ -84,6 +104,21 @@ function next_phone() {
 }
 
 function previous_phone() {
+    if(i == $(".flip-card-inner").length){
+		if (i-2 > 1) {
+			$(".flip-card").eq(i-2).css("display", "block");
+		}
+    }
+
+    if(i > 1){
+		$(".flip-card").eq(i+1).css("display", "none");
+		if (i-2 > 1) {
+			$(".flip-card").eq(i-2).css("display", "block");
+		}
+    }else if(i == 1){
+		$(".flip-card").eq(2).css("display", "none");
+    }
+
     $("#earringsL").unbind("click"), i == $(".flip-card-inner").length && ($("#earringsL").css("opacity", "1"), 
     $("#earringsR").css("opacity", "1"), $("#book2").css("transform", "translateX(calc(0 * var(--unit)))"), 
     $("#book-bg").css("transition", "transform 0.5,left 0.3s"), $("#book-bg").css("left", "calc(-82 * var(--unit))"), 
