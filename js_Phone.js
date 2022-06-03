@@ -8,20 +8,21 @@ function initialize_phone() {
     $("#book").css("transform", "translate(calc(0 * var(--unit)),calc(35 * var(--unit)))"), 
     $("#book").css("z-index", "5"), $("#book2").css("transform", "rotate(-4.81deg)"), 
     $("#book2").css("width", "calc(95.5 * var(--unit))"), $("#book2").css("height", "calc(117.25 * var(--unit))"), 
-    $("#book2").css("background-image", "url('img/book.png')"), $("#book").unbind("click"), 
+    $("#book2").css("background-image", "url('img/book.webp')"), $("#book").unbind("click"), 
     $(".flip-card").css("padding-top", "calc(3.4 * var(--unit))"), $(".flip-card").css("padding-left", "calc(12.7 * var(--unit))"), 
     $(".flip-card").css("width", "calc(83 * var(--unit))"), $(".flip-card").css("height", "calc(112.5 * var(--unit))"), 
     $("#quilldren").css("background-image", "url('img/Quildren-2.gif')"), $("#quilldren").css("width", "calc(65 * var(--unit))"), 
     $("#quilldren").css("height", "calc(65 * var(--unit))"), $("#quilldren").css("transform", "translate(calc(55 * var(--unit)),calc(100 * var(--unit)))"), 
     $("#pad").css("transform", "translate(calc(29 * var(--unit)),calc(-1 * var(--unit)))"), 
-    $("#pad2").css("background-image", "url('img/Pad.png')"), $("#pad2").css("transform", "rotate(11deg)"), 
+    $("#pad2").css("background-image", "url('img/Pad.webp')"), $("#pad2").css("transform", "rotate(11deg)"), 
     $("#pad2").css("width", "calc(72 * var(--unit))"), $("#pad2").css("height", "calc(57.08 * var(--unit))"), 
     $("#twitter").css("transform", "translate(calc(-12 * var(--unit)),calc(155 * var(--unit)))"), 
-    $("#twitter2").css("background-image", "url('img/Twitter.png')"), $("#twitter2").css("transform", "rotate(-13deg)"), 
+    $("#twitter2").css("background-image", "url('img/Twitter.webp')"), $("#twitter2").css("transform", "rotate(-13deg)"), 
     $("#twitter2").css("width", "calc(52 * var(--unit))"), $("#twitter2").css("height", "calc(44.3 * var(--unit))"), 
     $("#pen").css("transform", "translate(calc(29 * var(--unit)),calc(155 * var(--unit)))"), 
-    $("#pen2").css("background-image", "url('img/Pen.png')"), $("#pen2").css("transform", "rotate(26deg)"), 
+    $("#pen2").css("background-image", "url('img/Pen.webp')"), $("#pen2").css("transform", "rotate(26deg)"), 
     $("#pen2").css("width", "calc(23 * var(--unit))"), $("#pen2").css("height", "calc(82.2 * var(--unit))"), 
+    $("#page_cover").css("background-image", "url('img/page-cover.webp')"), 
     setTimeout(function() {
         $("#book").click(change_scene_phone);
     }, 500);
@@ -34,20 +35,22 @@ function change_scene_phone() {
     $("#book2").css("height", "calc(133.83 * var(--unit))"), $("#book").append('<div id="book-bg"></div>'), 
     $(".flip-card").css("padding-top", "calc(4 * var(--unit))"), $(".flip-card").css("padding-left", "calc(14 * var(--unit))"), 
     $(".flip-card").css("width", "calc(95 * var(--unit))"), $(".flip-card").css("height", "calc(128 * var(--unit))"), 
-    $("#quilldren").css("background-image", "url('img/Quildren-phone.png')"), $("#quilldren").css("width", "calc(24 * var(--unit))"), 
+    $("#quilldren").css("background-image", "url('img/Quildren-phone.webp')"), $("#quilldren").css("width", "calc(24 * var(--unit))"), 
     $("#quilldren").css("height", "calc(32.88 * var(--unit))"), $("#quilldren").css("transform", "translate(calc(5 * var(--unit)),calc(5 * var(--unit)))"), 
     $("#pad").css("transform", "translate(calc(30 * var(--unit)),calc(5 * var(--unit)))"), 
-    $("#pad2").css("background-image", "url('img/Pad-phone.png')"), $("#pad2").css("transform", "rotate(0deg)"), 
+    $("#pad2").css("background-image", "url('img/Pad-phone.webp')"), $("#pad2").css("transform", "rotate(0deg)"), 
     $("#pad2").css("width", "calc(24 * var(--unit))"), $("#pad2").css("height", "calc(32.88 * var(--unit))"), 
     $("#twitter").css("transform", "translate(calc(55 * var(--unit)),calc(5 * var(--unit)))"), 
-    $("#twitter2").css("background-image", "url('img/Twitter-phone.png')"), $("#twitter2").css("transform", "rotate(0deg)"), 
+    $("#twitter2").css("background-image", "url('img/Twitter-phone.webp')"), $("#twitter2").css("transform", "rotate(0deg)"), 
     $("#twitter2").css("width", "calc(24 * var(--unit))"), $("#twitter2").css("height", "calc(32.88 * var(--unit))"), 
     $("#pen").css("transform", "translate(calc(77 * var(--unit)),calc(5 * var(--unit)))"), 
-    $("#pen2").css("background-image", "url('img/Pen-phone.png')"), $("#pen2").css("transform", "rotate(0deg)"), 
+    $("#pen2").css("background-image", "url('img/Pen-phone.webp')"), $("#pen2").css("transform", "rotate(0deg)"), 
     $("#pen2").css("width", "calc(24 * var(--unit))"), $("#pen2").css("height", "calc(32.88 * var(--unit))"), 
-    $("#book").unbind("click"), $("#resources").css("display", "block"), $("#credits").css("display", "block"), 
+    $("#book").unbind("click"), 
+    $("#page_cover").css("background-image", "url('img/Cover.webp')"), 
     setTimeout(function() {
         $("#quilldren").click(initialize_phone), $("#book-bg").css("opacity", "1"), $("#cup").css("display", "none"), 
+        $("#resources").css("display", "block"), $("#credits").css("display", "block"), 
         $("#ink").css("display", "none"), $("#book").click(first_page_phone);
     }, 500);
 }
@@ -123,7 +126,7 @@ function previous_phone() {
     $("#earringsR").css("opacity", "1"), $("#book2").css("transform", "translateX(calc(0 * var(--unit)))"), 
     $("#book-bg").css("transition", "transform 0.5,left 0.3s"), $("#book-bg").css("left", "calc(-82 * var(--unit))"), 
     setTimeout(function() {
-        $("#book2").css("background-image", "url('img/book.png')");
+        $("#book2").css("background-image", "url('img/book.webp')");
     }, 300)), i > 1 ? ($(".flip-card-inner").eq(i - 1).css("transform", "rotateY(0deg)"), 
     $(".flip-card").eq(i - 2).css("z-index", "3"), $(".flip-card").eq(i - 1).css("z-index", "4"), 
     setTimeout(function() {

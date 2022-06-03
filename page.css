@@ -180,7 +180,7 @@
 		-moz-hyphens: auto;
 		-ms-hyphens: auto;
 		hyphens: auto;
-		overflow:hidden;
+		overflow: hidden;
 	}
 	.grid_author_short_type1{
 		text-align:left;
@@ -453,6 +453,7 @@
 	max-width:86%;
 	margin-top: 6.53%;
 	object-fit: cover;
+	height:100%;
 	aspect-ratio: 1 / 1;
 	filter: drop-shadow(0 0 2px rgba(130, 130, 130));
 }

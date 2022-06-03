@@ -5,7 +5,7 @@
 		width: 61.5vh;
 		height: 82vh;
 		padding: 0px 10px;
-		background-image: url("img/credits-popup-bg.png");
+		background-image: url("img/credits-popup-bg.webp");
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
@@ -25,7 +25,7 @@
 		margin: 20px auto;
 		width: 60vh;
 		height: 80vh;
-		background: url(./img/IQD-b-04.png);
+		background: url(./img/IQD-b-04.webp);
 		background-size: contain;
 		background-repeat: no-repeat;
 		display: flex;
@@ -36,7 +36,7 @@
 		margin: 20px auto;
 		width: 60vh;
 		height: 60vh;
-		background: url(./img/IQD-b-03.png);
+		background: url(./img/IQD-b-03.webp);
 		background-size: contain;
 		background-repeat: no-repeat;
 		display: flex;

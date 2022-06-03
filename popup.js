@@ -7,12 +7,12 @@ function popup_credits() {
         items: {
             src: `<div class="credits-bg">
                     <div class="credits-container">
-                        <img src="./img/credits-popup.png" class="credits-inside"/>
+                        <img src="./img/credits-popup.webp" class="credits-inside"/>
                     </div>
                 </div>`,
             type: 'inline'
         },
-        closeMarkup: '<button title="%title%" type="button" class="mfp-close" style="top: -35px; right: -10px"><img src="./img/pushpin-close.png" style="width: 35px; height:auto; pointer-events:none;"></button>',
+        closeMarkup: '<button title="%title%" type="button" class="mfp-close" style="top: -35px; right: -10px"><img src="./img/pushpin-close.webp" style="width: 35px; height:auto; pointer-events:none;"></button>',
     });
 }
 
@@ -27,7 +27,7 @@ function popup_article(text, stc){
                         </div>`,
                     type: 'inline'
                 },
-                closeMarkup: '<button title="%title%" type="button" class="mfp-close" style="top: -40px; right: -20px;"><img src="./img/Blose.png" style="width: 35px; height:auto; pointer-events:none;"></button>',
+                closeMarkup: '<button title="%title%" type="button" class="mfp-close" style="top: -40px; right: -20px;"><img src="./img/Blose.webp" style="width: 35px; height:auto; pointer-events:none;"></button>',
             });
         }
         else{
@@ -39,7 +39,7 @@ function popup_article(text, stc){
                         </div>`,
                     type: 'inline'
                 },
-                closeMarkup: '<button title="%title%" type="button" class="mfp-close" style="top: -40px; right: -20px"><img src="./img/Blose.png" style="width: 35px; height:auto; pointer-events:none;"></button>',
+                closeMarkup: '<button title="%title%" type="button" class="mfp-close" style="top: -40px; right: -20px"><img src="./img/Blose.webp" style="width: 35px; height:auto; pointer-events:none;"></button>',
             });
         }
     });
@@ -51,6 +51,6 @@ function popup_photo(photo, photo_region){
             src: photo.substring(0, photo.lastIndexOf('.')-4) + photo.substring(photo.lastIndexOf('.'))
           },
         type: 'image',
-        closeMarkup: '<button title="%title%" type="button" class="mfp-close"><img src="./img/Blose.png" style="width: 35px; height:auto; pointer-events:none;"></button>'
+        closeMarkup: '<button title="%title%" type="button" class="mfp-close"><img src="./img/Blose.webp" style="width: 35px; height:auto; pointer-events:none;"></button>'
     });
 }

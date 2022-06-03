@@ -44,7 +44,7 @@ function initialize_PC(){
 	$('#book').addClass("icon"); 
 	$('#book').css("z-index", "5"); 
 	$('#book2').css("transform", "rotate(-4.81deg)");
-	$('#book2').css("background-image", "url('img/book.png')");   
+	$('#book2').css("background-image", "url('img/book.webp')");   
 	$('#book').click(change_scene_PC);
 	
 	$('#pen').css("transform", "translate(calc(-2.6 * var(--unit)),calc(13.5 * var(--unit)))"); 
@@ -85,7 +85,7 @@ function change_scene_PC(){
 	$('#pen').css("transform", "translate(calc(87.2 * var(--unit)),calc(36.3 * var(--unit))) scale(60%)"); 
 	$('#pen2').css("transform", "rotate(-20deg)"); 
 	
-	$('#quilldren').css("background-image", "url('img/Quildren-page.png')"); 
+	$('#quilldren').css("background-image", "url('img/Quildren-page.webp')"); 
 	$('#quilldren').css("height", "calc(32.26 * var(--unit))"); 
 	$('#quilldren').css("transform", "translate(calc(72 * var(--unit)),calc(36 * var(--unit))) scale(35%)"); 
 	
@@ -133,7 +133,7 @@ function first_page_PC(){
 function next_PC(){
 	$('#earringsR').unbind("click");
 	if(i ==parseInt(($(".flip-card").length-1)/2)){
-		$('#book-bg').css("background-image","url('img/book-bgL.png')")
+		$('#book-bg').css("background-image","url('img/book-bgL.webp')")
 	}
 
 	if(i == 0){
@@ -180,7 +180,7 @@ function previous_PC(){
 	$('#earringsL').unbind("click");
 
 	if((i-1) ==parseInt(($(".flip-card").length-1)/2)){
-		$('#book-bg').css("background-image","url('img/book-bgR.png')")
+		$('#book-bg').css("background-image","url('img/book-bgR.webp')")
 	}
 
 	if(i == $(".flip-card-inner").length){
