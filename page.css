@@ -453,7 +453,7 @@
 	max-width:86%;
 	margin-top: 6.53%;
 	object-fit: cover;
-	height:100%;
+    width: 100%;
 	aspect-ratio: 1 / 1;
 	filter: drop-shadow(0 0 2px rgba(130, 130, 130));
 }
