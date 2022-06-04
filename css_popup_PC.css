@@ -14,11 +14,20 @@
 		height: 80vh;
 		margin: 0px auto;
 		overflow: auto;
-		padding-left: 3vh
+		padding-left: 3vh;
+		display: flex;
+		flex-direction: column;
 	}
 	.credits-inside {
 		width: 56.5vh;
 		height: auto;
+		margin: auto;
+	}
+	.resource-inside {
+		margin: auto;
+		width: 50vh;
+		height: auto;
+		transform: rotate(7deg); 
 	}
 	.popup-article-long-bg {
 		position: relative;
@@ -48,14 +57,14 @@
 		font-size: 1.8vh;
 		padding-left: 7vh;
 		padding-right: 7vh;
-		padding-top: 6vh;
+		margin-top: 6vh;
 		text-align:justify;
 		word-wrap: break-word;
 		-webkit-hyphens: auto;
 		-moz-hyphens: auto;
 		-ms-hyphens: auto;
 		hyphens: auto;
-		overflow:hidden;
+		overflow: auto;
 	}
 	.popup-article-author {
 		/* color: #FDDA8E; */
@@ -63,6 +72,7 @@
 		text-align: center;
 		font-family: Georgia;
 		font-size: 1.8vh;
+		padding-top: 5vh;
 		padding-left: 5vh;
 		padding-right: 5vh;
 		padding-bottom: 5vh;

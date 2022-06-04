@@ -16,6 +16,24 @@ function popup_credits() {
     });
 }
 
+function popup_resource() {
+    $('#resources').on('click', function(event) {
+        event.stopPropagation();
+    });
+
+    $('#resources').magnificPopup({
+        items: {
+            src: `<div class="credits-bg">
+                    <div class="credits-container">
+                        <img src="./img/resource-popup.webp" class="resource-inside"/>
+                    </div>
+                </div>`,
+            type: 'inline'
+        },
+        closeMarkup: '<button title="%title%" type="button" class="mfp-close" style="top: -35px; right: -10px"><img src="./img/pushpin-close.webp" style="width: 35px; height:auto; pointer-events:none;"></button>',
+    });
+}
+
 function popup_article(text, stc){
     requirejs([text], function(text) {
         if(text.Len == 1){

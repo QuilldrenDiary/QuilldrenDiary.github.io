@@ -98,7 +98,7 @@
 		-moz-hyphens: auto;
 		-ms-hyphens: auto;
 		hyphens: auto;
-		overflow:hidden;
+		overflow:auto;
 	}
 	.grid_author_long_type1{
 		font-size: 0.7rem;
@@ -200,7 +200,7 @@
 		-moz-hyphens: auto;
 		-ms-hyphens: auto;
 		hyphens: auto;
-		overflow:hidden;
+		overflow:auto;
 	}
 	.grid_author_long_type1{
 		font-size: 0.5rem;
@@ -435,14 +435,14 @@
 
 
 .grid_name_type2{
-	font-size: 0.5rem;
+	/* font-size: 0.5rem;
 	font-family: Georgia;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	overflow: hidden;
-	/* font-size: 0.5rem;
+	overflow: hidden; */
+	font-size: 0.5rem;
 	font-style: italic;
-	font-family: Verdana;*/
+	font-family: Verdana;
 	display: flex;
     justify-content: left;
 	flex-wrap: wrap;
