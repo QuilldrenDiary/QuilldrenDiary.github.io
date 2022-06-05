@@ -1,1 +1,1 @@
-define([], function(){ return { Author: "吃吃@qq321azwsx", Len: 0, Text: function(){ return "Happy candle-blowing, wish-making, cake-eating day! Happy birthday to the one and only Ike Eveland! Hope you have a day as wonderful as you!"}};});
+define([], function(){ return { Author: "吃吃", Len: 0, Text: function(){ return "Happy candle-blowing, wish-making, cake-eating day! Happy birthday to the one and only Ike Eveland! Hope you have a day as wonderful as you!"}};});

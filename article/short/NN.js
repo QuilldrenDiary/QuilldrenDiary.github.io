@@ -1,1 +1,1 @@
-define([], function(){ return { Author: "NN@minakiri", Len: 0, Text: function(){ return "To the best novelist in the world, happy birthday! May all your birthday wishes come true."}};});
+define([], function(){ return { Author: "NN", Len: 0, Text: function(){ return "To the best novelist in the world, happy birthday! May all your birthday wishes come true."}};});
