@@ -81,7 +81,6 @@
 		overflow:hidden;
 	}
 	.grid_author_short_type1{
-		text-align:left;
 		font-size: 0.7rem;
 		font-family: Georgia;
 		white-space: nowrap;
@@ -183,7 +182,6 @@
 		overflow: hidden;
 	}
 	.grid_author_short_type1{
-		text-align:left;
 		font-size: 0.5rem;
 		font-family: Georgia;
 		white-space: nowrap;
