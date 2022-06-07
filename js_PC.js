@@ -50,7 +50,7 @@ function initialize_PC(){
 	$('#pen').css("transform", "translate(calc(-2.6 * var(--unit)),calc(13.5 * var(--unit)))"); 
 	$('#pen2').css("transform", "rotate(24.03deg)"); 
 	
-	$('#quilldren').css("background-image", "url('img/Quildren-2.gif')"); 
+	$('#quilldren').css("background-image", "url('img/Quildren-2.webp')"); 
 	$('#quilldren').removeClass("icon"); 
 	$('#quilldren').css("height", "calc(22 * var(--unit))"); 
 	$('#quilldren').css("transform", "translate(calc(45 * var(--unit)),calc(1 * var(--unit)))"); 

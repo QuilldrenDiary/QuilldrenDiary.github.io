@@ -11,7 +11,7 @@ function initialize_phone() {
     $("#book2").css("background-image", "url('img/book.webp')"), $("#book").unbind("click"), 
     $(".flip-card").css("padding-top", "calc(3.4 * var(--unit))"), $(".flip-card").css("padding-left", "calc(12.7 * var(--unit))"), 
     $(".flip-card").css("width", "calc(83 * var(--unit))"), $(".flip-card").css("height", "calc(112.5 * var(--unit))"), 
-    $("#quilldren").css("background-image", "url('img/Quildren-2.gif')"), $("#quilldren").css("width", "calc(65 * var(--unit))"), 
+    $("#quilldren").css("background-image", "url('img/Quildren-2.webp')"), $("#quilldren").css("width", "calc(65 * var(--unit))"), 
     $("#quilldren").css("height", "calc(65 * var(--unit))"), $("#quilldren").css("transform", "translate(calc(55 * var(--unit)),calc(100 * var(--unit)))"), 
     $("#pad").css("transform", "translate(calc(29 * var(--unit)),calc(-1 * var(--unit)))"), 
     $("#pad2").css("background-image", "url('img/Pad.webp')"), $("#pad2").css("transform", "rotate(11deg)"), 
