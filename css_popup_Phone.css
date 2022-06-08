@@ -25,9 +25,8 @@
 	}
 	.resource-inside {
 		margin: auto;
-		width: 67vw;
+		width: 75vw;
 		height: auto;
-		transform: rotate(7deg); 
 	}
 	.popup-article-long-bg {
 		position: relative;
