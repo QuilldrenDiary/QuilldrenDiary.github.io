@@ -99,6 +99,12 @@
 		hyphens: auto;
 		overflow:auto;
 	}
+	/*chrome 和Safari*/
+	.grid_text_long_type1::-webkit-scrollbar { width: 0 !important }
+	/*IE 10+*/
+	.grid_text_long_type1 { -ms-overflow-style: none; }
+	/*Firefox*/
+	.grid_text_long_type1 { overflow: -moz-scrollbars-none; }
 	.grid_author_long_type1{
 		font-size: 0.7rem;
 		font-family: Georgia;
@@ -200,6 +206,12 @@
 		hyphens: auto;
 		overflow:auto;
 	}
+	/*chrome 和Safari*/
+	.grid_text_long_type1::-webkit-scrollbar { width: 0 !important }
+	/*IE 10+*/
+	.grid_text_long_type1 { -ms-overflow-style: none; }
+	/*Firefox*/
+	.grid_text_long_type1 { overflow: -moz-scrollbars-none; }
 	.grid_author_long_type1{
 		font-size: 0.5rem;
 		font-family: Georgia;
