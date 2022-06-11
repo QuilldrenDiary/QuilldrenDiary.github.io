@@ -79,6 +79,7 @@
 		-ms-hyphens: auto;
 		hyphens: auto;
 		overflow:hidden;
+		padding-top: 0.3vw;
 	}
 	.grid_author_short_type1{
 		font-size: 0.7rem;
@@ -186,6 +187,7 @@
 		-ms-hyphens: auto;
 		hyphens: auto;
 		overflow: hidden;
+		padding-top: 1vw;
 	}
 	.grid_author_short_type1{
 		font-size: 0.5rem;
@@ -280,13 +282,13 @@
 .grid_pic_1_1_type1{
 	max-width:86%;
 	margin-top: 6.53%;
-	filter: drop-shadow(0 0 2px rgba(130, 130, 130));
+	filter: drop-shadow(0 0 1px rgba(130, 130, 130));
 }
 
 .grid_pic_4_3_type1{
-	max-height:92%;
-	padding-top: 3%;
-	filter: drop-shadow(0 0 2px rgba(130, 130, 130));
+	max-height:88%;
+	padding-top: 4.6%;
+	filter: drop-shadow(0 0 1px rgba(130, 130, 130));
 }
 
 .grid_stc_pic_type1{
@@ -465,13 +467,13 @@
 	object-fit: cover;
     width: 100%;
 	aspect-ratio: 1 / 1;
-	filter: drop-shadow(0 0 2px rgba(130, 130, 130));
+	filter: drop-shadow(0 0 1px rgba(130, 130, 130));
 }
 
 .grid_pic_4_3_type2{
-	max-height:92%;
-	padding-top: 3%;
-	filter: drop-shadow(0 0 2px rgba(130, 130, 130));
+	max-height:88%;
+	padding-top: 4.6%;
+	filter: drop-shadow(0 0 1px rgba(130, 130, 130));
 }
 
 .book_L_type2{
@@ -619,9 +621,9 @@
 }
 .mask_pic_4_3{
 	position: absolute;
-	left: 1.5%;
-	top: 4%;
-	max-height:92%;
+	left: 3.8%;
+	top: 5.5%;
+	max-height:89%;
 }
 
 /************/
