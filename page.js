@@ -40,7 +40,7 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	{
 		PIC1 = `<div id="L_type1_id_${i}_1" class="grid_block_photo_type1 pic1_L_type1 bg_pic_4_3">
 					<img src="./photo/travel/${pic1}" class="grid_pic_4_3_type1"></img>
-					<img src="./img/IQD-a40.webp" class="mask_pic_4_3"></img>
+					<img src="./img/IQD-reflective-02-40_4x3.webp" class="mask_pic_4_3"></img>
 				</div>
 				<div class="grid_name_type1 name1_L_type1">${name1}</div>`;
 	}
@@ -53,7 +53,6 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	{
 		PIC2 = `<div id="L_type1_id_${i}_2" class="grid_block_photo_type1 pic2_L_type1 bg_pic_1_1">
 					<img src="./photo/dailylife/${pic2}" class="grid_pic_1_1_type1"></img>
-					<img src="./img/IQD-b40.webp" class="mask_pic_1_1"></img>
 				</div>
 				<div class="grid_name_type1 name2_L_type1">${name2}</div>`;
 	}
@@ -66,7 +65,6 @@ function insert_page_type1L(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	{
 		PIC3 = `<div id="L_type1_id_${i}_3" class="grid_block_photo_type1 pic3_L_type1 bg_pic_1_1">
 					<img src="./photo/dailylife/${pic3}" class="grid_pic_1_1_type1"></img>
-					<img src="./img/IQD-b40.webp" class="mask_pic_1_1"></img>
 				</div>
 				<div class="grid_name_type1 name3_L_type1">${name3}</div>`;
 	}
@@ -165,7 +163,6 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	{
 		PIC1 = `<div id="R_type1_id_${i}_1" class="grid_block_photo_type1 pic1_R_type1 bg_pic_1_1">
                     <img src="./photo/dailylife/${pic1}" class="grid_pic_1_1_type1"></img>
-                    <img src="./img/IQD-b40.webp" class="mask_pic_1_1"></img>
                 </div>
 				<div class="grid_name_type1 name1_R_type1">${name1}</div>`;
 	}
@@ -178,7 +175,6 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	{
 		PIC2 = `<div id="R_type1_id_${i}_2" class="grid_block_photo_type1 pic2_R_type1 bg_pic_1_1">
                     <img src="./photo/dailylife/${pic2}" class="grid_pic_1_1_type1"></img>
-                    <img src="./img/IQD-b40.webp" class="mask_pic_1_1"></img>
                 </div>
 				<div class="grid_name_type1 name2_R_type1">${name2}</div>`;
 	}
@@ -191,7 +187,7 @@ function insert_page_type1R(i,pic1,pic2,pic3,name1,name2,name3,text1,text2,text3
 	{
 		PIC3 = `<div id="R_type1_id_${i}_3" class="grid_block_photo_type1 pic3_R_type1 bg_pic_4_3">
                     <img src="./photo/travel/${pic3}" class="grid_pic_4_3_type1"></img>
-                    <img src="./img/IQD-a40.webp" class="mask_pic_4_3"></img>
+                    <img src="./img/IQD-reflective-02-50_4x3.webp" class="mask_pic_4_3"></img>
                 </div>
 				<div class="grid_name_type1 name3_R_type1">${name3}</div>`;
 	}
@@ -288,7 +284,7 @@ function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	{
 		PIC1 = `<div id="L_type2_id_${i}_1" class="grid_block_type2 pic1_L_type2 bg_pic_4_3">
                     <img src="./photo/travel/${pic1}" class="grid_pic_4_3_type2"></img>
-                    <img src="./img/IQD-a40.webp" class="mask_pic_4_3"></img>
+                    <img src="./img/IQD-reflective-02-40_4x3.webp" class="mask_pic_4_3"></img>
                 </div>
 				<div class="grid_name_type2 name1_L_type2">${name1}</div>`;
 	}
@@ -301,7 +297,7 @@ function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	{
 		PIC2 = `<div id="L_type2_id_${i}_2" class="grid_block_type2 pic2_L_type2 bg_pic_4_3">
                     <img src="./photo/travel/${pic2}" class="grid_pic_4_3_type2"></img>
-                    <img src="./img/IQD-a40.webp" class="mask_pic_4_3"></img>
+                    <img src="./img/IQD-reflective-02-50_4x3.webp" class="mask_pic_4_3"></img>
                 </div>
 				<div class="grid_name_type2 name2_L_type2">${name2}</div>`;
 	}
@@ -314,7 +310,7 @@ function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	{
 		PIC3 = `<div id="L_type2_id_${i}_3" class="grid_block_type2 pic3_L_type2 bg_pic_4_3">
                     <img src="./photo/travel/${pic3}" class="grid_pic_4_3_type2"></img>
-                    <img src="./img/IQD-a40.webp" class="mask_pic_4_3"></img>
+                    <img src="./img/IQD-reflective-02-60_4x3.webp" class="mask_pic_4_3"></img>
                 </div>
 				<div class="grid_name_type2 name3_L_type2">${name3}</div>`;
 	}
@@ -327,7 +323,7 @@ function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	{
 		PIC4 = `<div id="L_type2_id_${i}_4" class="grid_block_type2 pic4_L_type2 bg_pic_1_1">
                     <img src="./photo/travel/${pic4}" class="grid_pic_1_1_type2"></img>
-                    <img src="./img/IQD-b40.webp" class="mask_pic_1_1"></img>
+                    <img src="./img/IQD-reflective-02-40_1x1.webp" class="mask_pic_1_1"></img>
                 </div>
 				<div class="grid_name_type2 name4_L_type2">${name4}</div>`;
 	}
@@ -340,7 +336,7 @@ function insert_page_type2L(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	{
 		PIC5 = `<div id="L_type2_id_${i}_5" class="grid_block_type2 pic5_L_type2 bg_pic_1_1">
                     <img src="./photo/travel/${pic5}" class="grid_pic_1_1_type2"></img>
-                    <img src="./img/IQD-b40.webp" class="mask_pic_1_1"></img>
+                    <img src="./img/IQD-reflective-02-50_1x1.webp" class="mask_pic_1_1"></img>
                 </div>
 				<div class="grid_name_type2 name5_L_type2">${name5}</div>`;
 	}
@@ -377,7 +373,7 @@ function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	{
 		PIC1 = `<div id="R_type2_id_${i}_1" class="grid_block_type2 pic1_R_type2 bg_pic_4_3">
                     <img src="./photo/travel/${pic1}" class="grid_pic_4_3_type2"></img>
-                    <img src="./img/IQD-a40.webp" class="mask_pic_4_3"></img>
+                    <img src="./img/IQD-reflective-02-40_4x3.webp" class="mask_pic_4_3"></img>
                 </div>
 				<div class="grid_name_type2 name1_R_type2">${name1}</div>`;
 	}
@@ -390,7 +386,7 @@ function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	{
 		PIC2 = `<div id="R_type2_id_${i}_2" class="grid_block_type2 pic2_R_type2 bg_pic_4_3">
                     <img src="./photo/travel/${pic2}" class="grid_pic_4_3_type2"></img>
-                    <img src="./img/IQD-a40.webp" class="mask_pic_4_3"></img>
+                    <img src="./img/IQD-reflective-02-50_4x3.webp" class="mask_pic_4_3"></img>
                 </div>
 				<div class="grid_name_type2 name2_R_type2">${name2}</div>`;
 	}
@@ -403,7 +399,7 @@ function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	{
 		PIC3 = `<div id="R_type2_id_${i}_3" class="grid_block_type2 pic3_R_type2 bg_pic_4_3">
                     <img src="./photo/travel/${pic3}" class="grid_pic_4_3_type2"></img>
-                    <img src="./img/IQD-a40.webp" class="mask_pic_4_3"></img>
+                    <img src="./img/IQD-reflective-02-60_4x3.webp" class="mask_pic_4_3"></img>
                 </div>
 				<div class="grid_name_type2 name3_R_type2">${name3}</div>`;
 	}
@@ -416,7 +412,7 @@ function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	{
 		PIC4 = `<div id="R_type2_id_${i}_4" class="grid_block_type2 pic4_R_type2 bg_pic_1_1">
                     <img src="./photo/travel/${pic4}" class="grid_pic_1_1_type2"></img>
-                    <img src="./img/IQD-b40.webp" class="mask_pic_1_1"></img>
+                    <img src="./img/IQD-reflective-02-50_1x1.webp" class="mask_pic_1_1"></img>
                 </div>
 				<div class="grid_name_type2 name4_R_type2">${name4}</div>`;
 	}
@@ -429,7 +425,7 @@ function insert_page_type2R(i,pic1,pic2,pic3,pic4,pic5,name1,name2,name3,name4,n
 	{
 		PIC5 = `<div id="R_type2_id_${i}_5" class="grid_block_type2 pic5_R_type2 bg_pic_1_1">
                     <img src="./photo/travel/${pic5}" class="grid_pic_1_1_type2"></img>
-                    <img src="./img/IQD-b40.webp" class="mask_pic_1_1"></img>
+					<img src="./img/IQD-reflective-02-40_1x1.webp" class="mask_pic_1_1"></img>
                 </div>
 				<div class="grid_name_type2 name5_R_type2">${name5}</div>`;
 	}
